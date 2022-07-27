@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-touch">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos Digitais - SENAI EAD</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="SENAISP">
+
+  <!-- Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/aula5.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/uc4.css">
+  <script src="./scripts/index.js"></script>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a onclick="openNav()"><img src="./img/global/icons/menu.png" class="logoJogos" /></a>
+    <img src="./img/global/icons/logoSenai.png" class="logoJogos" />
+    <div></div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button onclick="openList()" class="accordion"><img src="./img/global/icons/summary.svg"
+        style="margin-right: 10px;">
+      <p>Sumário</p>
+    </button>
+    <div class="panel" id="panelBtn">
+      <ul type="1">
+
+        <a class="listPanel" href="#contextualizing">
+          <li>1.0 Contextualizando</li>
+        </a>
+        <a class="listPanel" href="#mobile-hardware">
+          <li>2.0 Hardware mobile</li>
+        </a>
+        <a class="listPanel" href="#hardware-working">
+          <li>3.0 Funcionamento do Hardware</li>
+        </a>
+
+      </ul>
+
+    </div>
+    <button onclick="changeTheme()" class="accordion">
+      <img src="./img/global/icons/themeIcon.svg" style="margin-right: 10px;" alt="Alterar tema">
+      <p>Alterar tema</p>
+    </button>
+    <button onclick="changeGray()" class="accordion">
+      <img src="./img/global/icons/scaleGrayIcon.svg" style="margin-right: 10px;" alt="Escala de Cinza">
+      <p>Escala de Cinza</p>
+    </button>
+    <div class="accordion2">
+      <div style="display: flex;">
+        <img src="./img/global/icons/textIcon.svg" style="margin-right: 10px;" alt="Tamanho da fonte">
+        <p>Tamanho da fonte</p>
+      </div>
+      <div>
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="homePage">
+
+    <div class="header-title">
+      <div>
+        <h2 class="text-Course" style="color: white;">Curso Técnico em</h2>
+        <h1 class="text-NameCourse">Jogos Digitais</h1>
+      </div>
+
+      <div id="containerBoxTitle">
+        <div class="numberTitle">5</div>
+        <div class="titleHeader">Hardware Mobile</div>
+      </div>
+
+      <div>
+        <strong class="objectiveLearning">Objetivo de Aprendizagem</strong>
+        <p class="text-DescriptUnit">
+          Reconhecer a estrutura física e lógica dos elementos de dispositivos mobile e de consoles
+        </p>
+      </div>
+
+      <div>
+        <p class="text-LetsLearn">Vamos iniciar os estudos</p>
+        <a class="btnPlay" href="#contextualizing">Play</a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./img/global/icons/arrowUpScroll.png"></button>
+  <div class="espaceTitle" id="contextualizing"></div>
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+
+
+        <h1 class="text-Title light-rose">Contextualizando</h1>
+        <h3 class="text-Course">Assista ao vídeo abaixo para uma introdução
+          aos seus estudos</h3>
+
+        <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/LpRbRDeON-Q"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="dicas">
+          <img src="./img/global/icons/help.png" id="help" style="margin-right: 20px;" />
+          <p>
+            Você, como especialista em desenvolvimento de games, como ajudaria Marcela a desenvolver esse game? Quais
+            dispositivos você usaria?
+          </p>
+        </div>
+
+
+        <div class="espaceTitle" id="arithmetic-operations"></div>
+        <h1 class="text-Title light-rose">Hardware mobile</h1>
+
+        <p>
+          Para entender um pouco mais sobre Hardware Mobile, destacamos uma pesquisa realizada pelo instituto Sioux, em
+          parceria com a ESPM, realizada em cinco países da América do Sul, onde afirma que 83% dos entrevistados jogam
+          em smartphones e outros 19% em tablets. Essa pesquisa nos traz a importância dos dispositivos móveis no
+          mercado de games. Diante do que foi apresentado, você topa conhecer junto comigo um pouco de como funciona a
+          estrutura de hardware nesses dispositivos?
+        </p>
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+      </div>
+    </div>
+  </section>
+
+  <!--Parallax-->
+  <div class="parallax background-parallax1">
+    <div class="cubeBlack">
+
+      <p>
+        Bem, os dispositivos mobile, em toda sua estrutura, funcionam basicamente igual aos PCs e consoles, ou seja,
+        possuem unidades de processamento, armazenamento, memória RAM e GPU.
+      </p>
+
+      <p>
+        A diferença é que as telas são integradas aos dispositivos. Além disso, devido ao espaço reduzido, o processo de
+        fabricação dos componentes internos (os chips) é diferente. Hoje, por exemplo, a mais avançada tecnologia de
+        produção de processadores está voltada aos mobiles. Aqui, literalmente, cada milímetro faz a diferença. Outra
+        diferença está no armazenamento interno: enquanto PCs e consoles utilizam a tecnologia SSD, com maior capacidade
+        e tamanho físico, chegando aos 2TB, os mobiles utilizam a tecnologia Flash, que é muito menor em tamanho físico,
+        porém possuem menos capacidade de armazenamento. Atualmente, o padrão no mercado está entre 128 e 256 GB de
+        capacidade.
+      </p>
+
+      <p>
+        Outra consequência, diretamente ligada ao tamanho do dispositivo, é a questão do hardware de processamento de
+        vídeo, chamado de GPU. Para PCs, a GPU é bastante potente, porém requer muito espaço físico e sistema de
+        arrefecimento com ventiladores. Você já deve ter imaginado que colocar um ventilador, por menor que seja, dentro
+        de um smartphone não é viável.
+      </p>
+
+      <p>
+        Assim, a solução é investir em tecnologia para fabricar chips, cada vez menores, e com mais capacidade de
+        processamento. Todas essas diferenças citadas impactam diretamente na qualidade gráfica do game. Portanto, os
+        desenvolvedores para mobile optam por focar na jogabilidade, mecânica e interatividade que o mobile oferece em
+        detrimento da qualidade gráfica (aqui não estamos falando que um jogo mobile é necessariamente de baixa
+        qualidade, mas sim que jogos como The Last of Us seriam impossíveis de se processar na GPU de um smartphone).
+      </p>
+
+    </div> <!-- End BlackBox -->
+  </div> <!-- End Parallax -->
+
+  <!--Section-->
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <p>
+          A vantagem dos dispositivos mobile é sua interatividade. Além de ser um dispositivo portátil, onde podemos
+          acessar nossos jogos em qualquer lugar e em qualquer momento, seus sensores e câmeras possibilitam novas
+          experiências, satisfazendo tanto os jogadores casuais quanto os assíduos. Um bom exemplo é o jogo Candy Crush,
+          que fez enorme sucesso entre os jogadores casuais (aqueles que não conhecem as mecânicas ou não se interessam
+          pelo enredo, mas querem apenas se divertir). Devido a sua simplicidade de jogabilidade, onde as ações são
+          feitas
+          com pequenos toques na tela, o jogo fez enorme sucesso.
+        </p>
+
+        <p>
+          Assim, as principais vantagens de um dispositivo mobile em relação aosa consoles estão também relacionadas ao
+          hardware. A seguir, citamos três:
+        </p>
+
+        <div class="grid mtop-1">
+          <div class="flex-and-grid-2">
+            <img src="./img/ue5/icons/touch.svg" />
+            <p class="mx-3">
+              <b>Tela touch:</b> os comandos são sempre realizados pela tela do aparelho, dispensando o uso de
+              periféricos, como joysticks, mouse e teclado. Isso agrada em cheio o público casual.
+
+            </p>
+          </div>
+
+          <div class="flex-and-grid-2 mtop-1">
+            <img src="./img/ue5/icons/sensores.svg" />
+            <p class="mx-3">
+              <b>Sensores:</b> o acelerômetro, por exemplo, permite que seu dispositivo mobile vire um volante em um
+              jogo de corrida de
+              automóveis. Basta rotacionar o smartphone para a direita e o seu carro se move para a direita. ! A
+              mecânica do
+              jogo se torna mais simples e oferece a mobilidade. Afinal, um fã de games de corrida não leva sua célula
+              de
+              pilotagem para jogar no transporte público. ! Mas com o smartphone, é possível jogar seu game de corrida
+              favorito, até mesmo no transporte público. !
+            </p>
+          </div>
+
+          <div class="flex-and-grid-2 mtop-1">
+            <img src="./img/ue5/icons/camera.svg" />
+            <p class="mx-3">
+              <b>Câmera e GPS:</b>possibilita a interação com o mundo real, aumentando a experiência de realidade
+              aumentada. Com isso, há jogos
+              que misturam tanto a experiência lúdica do game quanto a experiência do mundo real. Quem nunca saiu pelas
+              ruas
+              caçando pokémons? Jogos como Pokémon fazem muito bem essa ponte entre os dois mundos, graças à presença de
+              câmera e GPS nos dispositivos mobile.
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Portanto, em dispositivos mobile você perde em qualidade gráfica mas ganha em mobilidade e imersão. Mas para
+          agradar os jogadores mais experientes, a indústria de desenvolvimento mobile já produz elementos periféricos
+          específicos para mobile, tais como joysticks e óculos VR. Assim, para quem deseja uma experiência mais próxima
+          aos consoles, sem abrir mão da mobilidade, pode optar por esses dispositivos.
+        </p>
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <p>
+          Agora que você assistiu o vídeo sobre Jogos VR em dispositivos mobile, te convido a assistir a esse outro
+          vídeo que preparei para você sobre os melhores dispositivos para games.
+        </p>
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <h1 class="text-Title light-rose">Funcionamento do hardware</h1>
+
+        <p>
+          Como você pôde perceber, a tecnologia e a arquitetura para o hardware de dispositivos mobile devem ser
+          diferentes em relação aos desktops e consoles, devido às suas limitações de tamanho e consumo de energia.
+        </p>
+        <p>
+          A grande diferença, além do tamanho, está na questão do consumo de energia. Você deve concordar de que não
+          seria muito bom sair, com seu smartphone conectado o tempo todo a um cabo de energia, não é mesmo?
+        </p>
+        <p>
+          A solução, para tanto, é a utilização de baterias. Porém, devido ao tamanho limitado, as baterias desses
+          dispositivos são menores do que em notebooks, por exemplo. Para dar uma ideia da diferença, o que uma bateria
+          de um smartphone atual fornece de potência é o equivalente ao que um notebook consome entre 5 a 10 minutos.
+          Logo, é de se imaginar que a tecnologia e arquitetura utilizadas em desktops, notebooks e consoles não se
+          devem replicar em mobiles. Agora, vamos entender onde estão essas diferenças.
+        </p>
+        <p>
+          Para começar, uma CPU padrão consome a partir de 65 watts de potência, enquanto uma bateria móvel fornece
+          cerca de 10 watts. Pela alta demanda de energia, as CPUs padrão precisam de um refrigerador (um pequeno
+          ventilador instalado acima delas). Seria inviável instalar um ventilador em seu smartphone, não acha?
+        </p>
+
+        <!--Imagem-->
+        <img class="w-75 m-auto" src="./img/ue5/imagem 1.png" alt="" />
+
+        <p>
+          A solução encontrada pelos engenheiros foi diminuir a quantidade de transistores nos processadores mobiles e,
+          também, a integração dos componentes, bem como o uso de controladores dedicados para as diversas funções.
+          Enquanto nos PCs a CPU é responsável por quase todo o processamento, nos mobiles essa tarefa é dividida entre
+          diversos controladores.
+        </p>
+
+        <p>
+          Mas como é possível então diminuir a quantidade de transistores (e consequentemente o consumo de energia e
+          calor) sem afetar a capacidade de processamento? A resposta não é tão simples e sim, a capacidade de
+          processamento será diminuída.
+        </p>
+
+        <p>
+          Os games que você gosta de jogar no PC ou console não terão o mesmo desempenho em um smartphone. Mas a ideia
+          por trás dessa redução é simplificar as operações internas da CPU. Enquanto que um dispositivo móvel possui
+          CPU, na arquitetura RISC, as CPUs de PCs são modeladas em arquitetura CISC. Explicando melhor, a arquitetura
+          RISC prevê uma quantidade menor de funções a serem realizadas pelo processador, admitindo assim a redução no
+          número de transistores.
+        </p>
+
+        <!--Div de aviso com lâmpada-->
+        <div class="atencion my-3 mx-3">
+          <img src="./img/global/icons/lightbulb.png" />
+          <p>
+            O transistor é um dispositivo eletrônico feito de um material semicondutor, como o silício, e que quando
+            submetido a determinadas correntes elétricas, atuam como isolante (sem passagem de energia) ou condutores
+            (permitindo a passagem de corrente). Quando estão no estado isolante, produzem o bit 0. No estado condutor,
+            produzem o bit 1.
+          </p>
+        </div>
+
+        <p>
+          A desvantagem da arquitetura RISC é que possuem menos instruções, ocasionando programas maiores e menos
+          otimizados em relação aos processadores presentes em consoles e PCs. Tudo isso impacta na forma como são
+          desenvolvidos os softwares e as linguagens de programação para esses dispositivos. Em suma, as CPUs para
+          mobile consomem menos energia e dissipam menos calor, com o ônus de possuírem menor capacidade de
+          processamento e consumirem mais memória.
+        </p>
+        <p>
+          Uma outra grande diferença entre mobiles e PCs está na tecnologia de armazenamento. Quando você instala um
+          jogo em seu celular, você está gravando os arquivos em um dispositivo interno de armazenamento.
+        </p>
+        <p>
+          Nos primórdios da computação, esses dispositivos eram mecânicos, baseados em discos (daí o nome disco rígido,
+          ou HD) e agulhas mecânicas para leitura e gravação. Houve uma evolução, e hoje em dia a tecnologia de
+          armazenamento padrão é denominada SSD.
+        </p>
+
+        <img class="w-75 m-auto" src="./img/ue5/imagem 2.jpeg" alt="" />
+
+        <p>
+          A grande diferença entre HD e SSD é que o primeiro faz armazenamento eletromecânico, semelhante às antigas
+          fitas VHS de vídeo K7, enquanto os SSD utilizam circuitos semicondutores baseados em transistores. A vantagem
+          é que um SSD, por não ter limitações físicas, atua em uma velocidade muito superior e são mais resistentes à
+          intempéries, tais como choques, quedas e alterações bruscas de temperatura. Porém, para aumentar a capacidade
+          de armazenamento, é necessário aumentar o número de circuitos e, consequentemente, o tamanho físico. Você deve
+          lembrar que os smartphones possuem tamanho limitado. Com isso, a capacidade de armazenamento é menor.
+        </p>
+
+        <img class="w-75 m-auto" src="./img/ue5/imagem 3.png" alt="" />
+
+        <p>
+          A solução encontrada pelos engenheiros foi criar uma outra tecnologia que permitiria o aumento da capacidade
+          de armazenamento sem necessariamente aumentar o tamanho do dispositivo. Assim nasceu, em meados dos anos 2010,
+          a tecnologia UFS, que foi utilizada pela primeira vez em 2015 com o aparelho S6 da Samsung. A UFS, assim como
+          um SSD, também é uma memória Flash, ou seja, baseada em circuitos semicondutores. Antes da criação do USF, os
+          dispositivos móveis possuíam o padrão de armazenamento MMC, que basicamente é a mesma tecnologia utilizada em
+          pen-drives e cartões de memória externos.
+        </p>
+        <p>
+          Um MMC também é uma memória flash, mas sem todos os dispositivos de otimização presentes em um SSD. Assim, são
+          consideravelmente menores, porém muito mais lentos. A grande evolução proposta pela UFS é utilizar chips do
+          tamanho de pequenos cartões de memória, porém com o alto desempenho. Isso foi possível pois foi totalmente
+          projetado para dispositivos mobiles (em contraponto aos SSD). Sendo assim, consomem menos energia e possuem
+          controladores que aceleram o processo de leitura e escrita.
+        </p>
+        <p>
+          O foco para o desenvolvimento da tecnologia USF foi aumentar a largura da banda, ou seja, a quantidade de
+          dados que são lidos / escritos por segundo. Hoje, um MMC processa cerca de 250 MB por segundo, enquanto um USF
+          já ultrapassa a barreira dos 500MB por segundo. Tudo isso, em chips de tamanho reduzido.! Mas tudo,
+          literalmente, tem um preço a se pagar. Atualmente, enquanto consoles e PCs com tecnologia de ponta
+          dificilmente ultrapassam R$ 4.000,00, um dispositivo mobile equipado com todas essas tecnologias pode superar
+          facilmente a casa dos dez mil reais.
+        </p>
+
+        <img class="w-75 m-auto" src="./img/ue5/imagem 4.jpg" alt="" />
+
+        <p>
+          Nesta UE vimos as principais características de Hardware para dispositivos móveis e suas tecnologias. Agora,
+          para fixar seu conhecimento, responda às seguintes questões:
+        </p>
+
+        <div style="display: flex; align-items:center; margin-bottom: 40px;">
+          <p id="question-number"
+            style="margin-right: 30px; align-self: center; justify-content: center; text-align: center;">
+            1
+          </p>
+
+          Relacione as tecnologias de armazenamento presentes na coluna 1 com suas características na coluna 2:
+        </div>
+
+        <div id="container-drag-and-drop">
+          <div style="display: flex;">
+            <div id="board-description">Tecnologia</div>
+            <div id="board-description" style="width: 73%;">Característica</div>
+          </div>
+
+          <div class="board">
+
+            <img src="./img/ue5/atividades/1.png" />
+
+            <div class="dropzone" id="drop-1">
+              <div class="card" draggable="true" id="drag-3">
+                <img src="./img/ue5/icons/ArrowsOutCardinal.svg" />
+                <p>Memória flash de alta capacidade para desktops</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="board">
+            <img src="./img/ue5/atividades/2.png" />
+            <div class="dropzone" id="drop-3">
+              <div class="card" draggable="true" id="drag-2">
+                <img src="./img/ue5/icons/ArrowsOutCardinal.svg" />
+                <p>Memória flash de alta capacidade para dispositivos móveis
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="board">
+            <img src="./img/ue5/atividades/3.png" />
+            <div class="dropzone" id="drop-4">
+              <div class="card" draggable="true" id="drag-4">
+                <img src="./img/ue5/icons/ArrowsOutCardinal.svg" />
+                <p>Alta capacidade e processo eletromecânico
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="board">
+            <img src="./img/ue5/atividades/4.png" />
+            <div class="dropzone" id="drop-5">
+              <div class="card" draggable="true" id="drag-1">
+                <img src="./img/ue5/icons/ArrowsOutCardinal.svg" />
+                <p>Memória flash de baixa capacidade</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="container-points-false">
+          <img src="./img/ue5/icons/x.svg" />
+          <p id="pontos-totais">
+            Quase lá, você acertou 1/5. Tente novamente!
+          </p>
+        </div>
+
+        <div id="container-points-true">
+          <img src="./img/ue5/icons/v.svg" />
+          <p id="pontos-totais">
+            Parabéns, você acertou todas!
+          </p>
+        </div>
+
+
+        <div style="display: flex; align-items:center">
+          <p id="question-number"
+            style="margin-right: 30px; align-self: center; justify-content: center; text-align: center;">
+            2
+          </p>
+
+          Assine verdadeiro ou falso
+        </div>
+
+
+
+        <br />
+        <div>
+          (<input type="text" id="form-option" class="value1" name="value1" />) A
+          arquitetura RISC,
+          por conter um número alto de
+          instruções, é a
+          mais adequada para CPUs de smartphones.
+        </div>
+        <br />
+        <div>
+          (<input type="text" id="form-option" class="value2" name="value2" />) O consumo de
+          energia não está diretamente relacionado à quantidade
+          de transistores em um chip.
+        </div>
+
+        <button id="button-submit-form" onclick="checkQuestion()">
+          Enviar
+        </button>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="containerFooter row">
+    <a class="row" href="aula-4.html">
+      <img class="arrowImg" src="img/global/icons/previusclass.png" />
+      <p class="btnDesafio">Desafio anterior</p>
+    </a>
+    <a class="row" href="aula-6.html">
+      <p class="btnDesafio">Próximo Desafio</p>
+      <img class="arrowImg" src="img/global/icons/nextclass.png" />
+    </a>
+  </div>
+
+  <!-- Libras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script src="./scripts/aula5.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

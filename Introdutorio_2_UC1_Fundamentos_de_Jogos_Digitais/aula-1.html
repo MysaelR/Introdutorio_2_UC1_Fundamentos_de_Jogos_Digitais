@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-touch">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos Digitais - SENAI EAD</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="SENAISP">
+
+  <!-- Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/aula1.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/uc4.css">
+  <script type="text/javascript" src="./scripts/jquery.js"></script>
+  <script src="./scripts/index.js"></script>
+
+
+
+
+
+  </script>
+</head>
+
+<body>
+  <div class="navbar">
+    <a onclick="openNav()"><img src="./img/global/icons/menu.png" class="logoJogos" /></a>
+    <img src="./img/global/icons/logoSenai.png" class="logoJogos" />
+    <div></div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button onclick="openList()" class="accordion"><img src="./img/global/icons/summary.svg"
+        style="margin-right: 10px;">
+      <p>Sumário</p>
+    </button>
+    <div class="panel" id="panelBtn">
+      <ul type="1">
+        <a class="listPanel" href="#contextualizing">
+          <li>1.0 Contextualizando</li>
+        </a>
+        <a class="listPanel" href="#software-and-programing-logic">
+          <li>2.0 Softwares e a Lógica de programação</li>
+        </a>
+        <a class="listPanel" href="#algorithms">
+          <li>3.0 Algoritmos</li>
+        </a>
+        <a class="listPanel" href="#narrative-description">
+          <li>4.0 Descrição Narrativa</li>
+        </a>
+        <a class="listPanel" href="#flowcharts">
+          <li>5.0 Fluxogramas</li>
+        </a>
+        <a class="listPanel" href="#value-representation">
+          <li>6.0 Representação de valores</li>
+        </a>
+        <a class="listPanel" href="#pseudocode">
+          <li>7.0 Pseudocódigo</li>
+        </a>
+        <a class="listPanel" href="#recapping">
+          <li>8.0 Recapitulando</li>
+        </a>
+
+      </ul>
+    </div>
+    <button onclick="changeTheme()" class="accordion">
+      <img src="./img/global/icons/themeIcon.svg" style="margin-right: 10px;" alt="Alterar tema">
+      <p>Alterar tema</p>
+    </button>
+    <button onclick="changeGray()" class="accordion">
+      <img src="./img/global/icons/scaleGrayIcon.svg" style="margin-right:
+          10px;" alt="Escala de Cinza">
+      <p>Escala de Cinza</p>
+    </button>
+    <div class="accordion2">
+      <div style="display: flex;">
+        <img src="./img/global/icons/textIcon.svg" style="margin-right: 10px;" alt="Tamanho da fonte">
+        <p>Tamanho da fonte</p>
+      </div>
+      <div>
+        <button name="increase-font" id="increase-font" title="Aumentar
+            fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir
+            fonte">A -</button>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="homePage">
+    <div class="header-title">
+      <div>
+        <h2 class="text-Course" style="color: white;">Curso Técnico em</h2>
+        <h1 class="text-NameCourse">Jogos Digitais</h1>
+      </div>
+      <div id="containerBoxTitle">
+        <div class="numberTitle">1</div>
+        <div class="titleHeader">Profissionais de jogos</div>
+      </div>
+      <div>
+        <strong class="objectiveLearning">Objetivo de Aprendizagem</strong>
+        <p class="text-DescriptUnit">Reconhecer a evolução histórica e tecnológica dos jogos digitais</p>
+      </div>
+      <div>
+        <p class="text-LetsLearn">Vamos iniciar os estudos</p>
+        <a class="btnPlay" href="#contextualizing">Play</a>
+      </div>
+    </div>
+  </header>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./img/global/icons/arrowUpScroll.png"></button>
+
+  <section class="container course">
+
+    <div class="section">
+      <div class="contentSection">
+        <div>
+          <div class="espaceTitle" id="contextualizing"></div>
+          <h1 class="text-Title light-rose">Contextualizando</h1>
+          <h3 class="text-Course">Assista ao vídeo abaixo para uma introdução aos seus estudos</h3>
+        </div>
+        <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/pIasFV761Io"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="dicas">
+          <img src="./img/global/icons/help.png" id="help" style="margin-right: 20px;" />
+          <p>
+            Como Pedro poderá gerenciar sua equipe e com quais profissionais ele deve trabalhar?
+          </p>
+        </div>
+
+        <div class="espaceTitle" id="software-and-programing-logic"></div>
+        <h1 class="text-Title light-rose">PROFISSIONAIS DA ÁREA DE JOGOS</h1>
+
+        <p>
+          Os softwares indicam o que a máquina (hardware) deve executar, ou seja, determina a parte lógica dos sistemas
+          computacionais. Os sistemas operacionais, como Windows, macOS, iOS e Android são softwares, assim como os
+          aplicativos que estão conosco todos os dias a partir de celulares e smartphones.
+        </p>
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Game Designer</h1>
+
+        <img class="w-75 m-auto" src="./img/ue1/Imagem 1.png" alt="" />
+
+        <p>
+          O primeiro profissional que destacamos aqui é o Game Designer. De forma resumida, o GD tem a responsabilidade
+          de realizar todo o planejamento do jogo, passando pela interface, enredo, mecânicas e, por fim, a
+          interatividade. Sua função principal é pensar em como deixar o jogo mais divertido e interessante.
+        </p>
+
+        <p>
+          É bem comum que em projetos maiores, essa função fique subdivida entre os seguintes profissionais: Designer
+          Chefe, Designer de Sistema, Designer de fase e Redator. Em um projeto menor, essas funções podem ser
+          centralizadas em uma mesma pessoa. Mas antes de entrarmos nos detalhes de cada profissional, vamos conhecer
+          como é a produção de um jogo.
+        </p>
+
+        <img class="w-75 m-auto" src="./img/ue1/Imagem 2.png" alt="" />
+
+
+
+      </div>
+    </div>
+
+  </section>
+
+  <div class="espaceTitle" id="algorithms"></div>
+  <div class="parallax background-parallax1">
+    <div class="cubeBlack">
+
+      <p>
+        A figura anterior mostra que o processo de produção de um game se concentra em duas grandes áreas: a de
+        produção, responsável pela construção do jogo em si, e a área de negócios, trabalhando com todo o processo de
+        marketing, divulgação, vendas e acompanhamento de pós-lançamento. Essas duas áreas em conjunto trabalham para
+        que haja um produto final de sucesso. Aqui, vamos focar na parte de produção do jogo.
+      </p>
+      <p>
+        Como identificamos na figura, a produção é formada por quatro grandes áreas: Design, Áudio, Arte e Programação.
+        Obviamente, cada uma dessas áreas pode ser subdividida em outras, como por exemplo a área de Arte, onde temos
+        diversos profissionais trabalhando com desenho conceitual, animação, texturização, entre outros. Na programação
+        podemos ter o programador em si, o testador, e assim por diante.
+      </p>
+      <p>
+        Basicamente o Game Designer (GD) vai criar, organizar e desenvolver todo o conjunto de regras e a estética
+        visual do jogo. Nesse conjunto estão inseridos todos os objetivos, regras, desafios e recompensas que definem o
+        jogo, produzindo as interações com os jogadores.
+      </p>
+      <p>
+        Esse profissional parte de uma ideia ou conceito e desenvolve toda a estrutura do jogo, estando envolvido com
+        outros profissionais, como artistas e programadores. Além disso, ele certifica que o projeto está caminhando
+        conforme o planejamento. O Game Designer é também o responsável por elaborar o principal documento de
+        desenvolvimento do jogo: o GDD (Game Design Document), Clica no vídeo a seguir para entender mais sobre.
+      </p>
+
+
+
+    </div> <!-- End BlackBox -->
+  </div> <!-- End Parallax -->
+
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/Esp1hXc3V_s"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+
+        <p>
+          O Game Designer deve ser um profissional bastante criterioso e organizado, pois ele estará envolvido em todo o
+          processo produtivo. Ele não, necessariamente, deverá ter um profundo conhecimento técnico, mas é importante
+          que saiba dialogar com todos os envolvidos.
+        </p>
+        <p>
+          Além disso, deverá ter habilidades de pesquisa, ser conciso e claro e possuir um poder de síntese acentuado.
+          Ademais, é necessário que saiba se comunicar e expressar bem, tanto de forma oral como escrita, pois é ele
+          quem vai guiar todo o processo.
+        </p>
+
+        <p>
+          Como dissemos no início, em um projeto grande o papel de Game Designer pode ser subdividido. Veja abaixo as
+          principais tarefas que podem ser delegadas pelo Game Designer:
+        </p>
+
+        <p>
+          <li class="my-1 mx-1">
+            Designer chefe: é o principal Game Designer com a incumbência de liderar a equipe e desenvolver todo o
+            conceito do jogo. É ele quem define as informações básicas do projeto: mecânica (plataforma, corrida, mundo
+            aberto etc), o estilo gráfico (realista, cartoon), a plataforma (PC, mobile, console). Ele também será o
+            responsável por escrever e manter o GDD.
+          </li>
+          <li class="my-1 mx-1">
+            Level Designer: esse profissional é o responsável por projetar os níveis (fases) do jogo. Ele vai trazer o
+            equilíbrio nas fases, definir as missões, os desafios e as recompensas. Por exemplo, o Level Designer poderá
+            definir a quantidade de vida, dano, pontuação em uma fase, bem como, posicionar inimigos, boss e caminhos
+            secretos / alternativos. Também tem a função de equilibrar o grau de dificuldade de acordo com o andamento
+            da
+            fase (um desafio muito difícil logo no início poderá desestimular o jogador).
+          </li>
+          <li class="my-1 mx-1">
+            Redator: esse profissional tem a tarefa de pensar na história e na narrativa do game. É de sua
+            responsabilidade elaborar diálogos, cenas, dicas e tutoriais, para que a jogabilidade possa fluir de acordo
+            com a história do jogo. Além disso, ele será o responsável por inserir os elementos narrativos dentro dos
+            cenários, aliando a narrativa (como eu conto a história do jogo) e os elementos do jogo em si (cenários,
+            itens, personagens).
+          </li>
+        </p>
+
+        <div class="espaceTitle" id="narrative-description"></div>
+        <h1 class="text-subtitle1 dark-rose mx-3">Artista</h1>
+
+        <img class="w-75 m-auto" src="./img/ue1/Imagem 3.png" alt="" />
+
+        <p>
+          Os artistas visuais são responsáveis por criar e estruturar fisicamente os personagens, objetos, ambientes e
+          cenários dos jogos. Assim como no design, dependendo do tamanho do projeto, a arte pode ser dividida em
+          diversos profissionais. Por exemplo, podemos ter o artista 3D, ilustrador, animador e o texturizador. Assim,
+          vamos conhecer o que cada um deles faz.
+
+          <li class="my-1 mx-1">
+            Artista 3D: essa é uma profissão que não se restringe somente à área de games. O cinema, a indústria e a
+            construção civil também fazem uso desse profissional. No entanto, aqui, vamos ver o que ele faz dentro da
+            criação de jogos. Em primeiro lugar, a modelagem 3D é a arte de criar objetos sólidos através de
+            representações matemáticas de superfícies ou objetos volumétricos (cubo, esfera, cilindro etc). Em suma, é a
+            criação de modelos de objetos tridimensionais com auxílio de softwares. Basicamente um artista 3D recebe o
+            desenho ou foto e, até mesmo, uma arte conceitual, de um objeto ou personagem e cria o modelo tridimensional
+            para ele.
+          </li>
+
+        </p>
+
+        <img class="w-75 m-auto" src="./img/ue1/Imagem 4.png" alt="" />
+        <p>
+          Na imagem acima, vemos uma arte conceitual de uma personagem. A partir desse desenho, o artista 3D vai criar o
+          modelo tridimensional para essa personagem. Na imagem a seguir você pode ver o modelo 3D criado através de um
+          software:
+        </p>
+
+        <img class="w-75 m-auto" src="./img/ue1/Imagem 5.png" alt="" />
+
+        <img class="w-75 m-auto" src="./img/ue1/Imagem 6.png" alt="" />
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Parallax-->
+  <div class="parallax background-parallax2">
+    <div class="cubeBlack">
+      <p>
+        Assim, a função do artista 3D é transformar essas artes conceituais em modelos 3D que possam ser inseridos nos
+        jogos.
+        <li class="my-1 mx-1">
+          Ilustrador: como vimos acima, o artista 3D é responsável por criar os modelos tridimensionais. Mas quem cria
+          os modelos conceituais? Essa função cabe ao ilustrador (também conhecido como Concept Artist). Além de criar
+          esses desenhos em 2D, o ilustrador também é responsável por criar os materiais de marketing e propaganda do
+          jogo, tal como banners, capas, pôsteres.
+        </li>
+        <li class="my-1 mx-1">
+          Animador: esse profissional é responsável por dar vida ao personagem. É dele a tarefa de receber um modelo (3D
+          ou 2D) e criar as sequências de gestos e movimentos as quais chamamos de animação. Essa tarefa exige um
+          conhecimento de anatomia para que os movimentos dos personagens possam realmente parecer com os da vida real.
+          Se você já jogou um simulador de futebol, você deve ter reparado da dinâmica de movimento dos jogadores em
+          campo, a forma de correr, o gestuário e até expressões faciais. Pois bem, a criação de tudo isso é função do
+          animador.
+        </li>
+        <li class="my-1 mx-1">
+          Texturizador: quando se posiciona um personagem ou objeto em cena, é preciso se preocupar com a iluminação e o
+          foco de luz que vai incidir sobre o personagem ou objeto. Para que o jogo transmita um ar de realismo, é
+          necessário que esses modelos (personagem ou objeto) tridimensionais possuam materiais que simulem os materiais
+          da vida real. Em outras palavras, precisamos simular como a luz reflete e refrata em um objeto para se obter o
+          efeito de realismo.
+        </li>
+
+        Por exemplo, a forma que a luz reflete na pele humana ou em uma esfera metálica, ou até mesmo em um espelho, é a
+        mesma? Certamente que não. Então, a tarefa do texturizador é criar esses materiais (pele, metal, plástico,
+        madeira etc) e inserir nos modelos criados pelo artista 3D (observe que um mesmo profissional pode exercer as
+        duas funções) para que esses modelos possam ser idênticos aos encontrados na vida real.
+      </p>
+    </div> <!-- End BlackBox -->
+  </div> <!-- End Parallax -->
+
+
+  <!--Section-->
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Programador</h1>
+
+        <img class="w-75 m-auto" src="./img/ue1/Imagem 7.png" alt="" />
+
+        <p>
+          O programador ou desenvolvedor é o profissional que vai transformar a visão do designer e o trabalho do
+          artista em um game jogável e controlável. Com o uso de linguagens de programação e softwares motores
+          (conhecidos como engines) o programador dá “vida” ao jogo.
+        </p>
+
+        <p>
+          Pense no seguinte exemplo: ao apertar um botão no joystick, o personagem agacha e apanha um item do cenário.
+          Toda essa interatividade entre joystick, personagem e cenário foi programada pelo desenvolvedor. Assim, o
+          programador é o responsável por criar o software para implementar as ideias criadas pelos designers.
+          Atualmente existem dois grandes motores de jogos: Unity e Unreal. Eles são utilizados pelos programadores para
+          criar o software do jogo.
+        </p>
+
+        <!--SIMULADOR-->
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Sound Designer</h1>
+
+        <img class="w-75 m-auto" src="./img/ue1/Imagem 8.png" alt="" />
+
+        <p>
+          Você deve concordar que jogar um game sem som não é muito legal, correto? Além disso, a trilha sonora pode
+          ajudar a contar a narrativa do jogo. Pense, por exemplo, em um jogo de terror. A trilha e os efeitos sonoros
+          são responsáveis por gerar medo e tensão no jogador. Quem não lembra da musiquinha no jogo do simpático Super
+          Mário? Pois bem, o áudio é uma parte fundamental no processo de produção de um jogo e o responsável por criar
+          esses sons é o Sound Designer ou Engenheiro de Som. A tarefa desse profissional é criar toda a trilha de
+          músicas e os efeitos sonoros (explosão, tiro, freada de veículo, barulho de multidão etc) presentes no jogo.
+          Para tanto, ele deve conhecer a fundo o enredo, história e narrativa do game e gerar esses sons de acordo com
+          o momento e ação executada no jogo. É um profissional de suma importância pois é ele quem vai encapsular toda
+          a essência do jogo em formato de som.
+        </p>
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Testador</h1>
+
+        <img class="w-75 m-auto" src="./img/ue1/Imagem 9.png" alt="" />
+
+        <p>
+          Essa função talvez seja a mais desejada pelos entusiastas de games. Já pensou em ganhar dinheiro para testar
+          jogos? Sim, essa é a função do testador. Mas não se engane que é uma tarefa fácil. O testador deve testar o
+          jogo de forma sistemática, apontando falhas, erros e melhorias. Além disso, eles estão ligados aos
+          programadores sugerindo melhorias e adaptações na jogabilidade. É um trabalho exaustivo, pois o testador passa
+          muitas horas jogando e analisando a mecânica e a jogabilidade e também procurando bugs e falhas. Ele deve
+          garantir que o jogo seja lançado livre de falhas, pois isso pode impactar a credibilidade do estúdio
+          desenvolvedor dentro do mercado de games. Alguns estúdios optam por não ter esse profissional, delegando essa
+          tarefa a um grupo de jogadores pré-selecionados.
+        </p>
+
+        <p>
+          Vimos nessa unidade as principais funções e profissões envolvidas no processo de desenvolvimento de um jogo.
+          Certamente que cada uma dessas atividades exige habilidades e conhecimentos diferenciados. Você deverá
+          conhecer um pouco de cada uma dessas atividades e escolher uma área na qual deseja se especializar.
+        </p>
+
+
+
+        <div class="flex justify-center w-full">
+          <img src="./img/ue1/check.svg" />
+          <p class="px-3" id="check-green-word"> Solução do problematizando</p>
+        </div>
+        <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/zsTTj9437MM"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <div class="background-1 "> </div>
+
+  <div class="containerFooter row">
+    <div class="row disable">
+      <!-- Button Removed -->
+    </div>
+    <a class="row" href="aula-2.html">
+      <p class="btnDesafio">Próximo Desafio</p>
+      <img class="arrowImg" src="img/global/icons/nextclass.png" />
+    </a>
+  </div>
+
+  <!-- Libras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

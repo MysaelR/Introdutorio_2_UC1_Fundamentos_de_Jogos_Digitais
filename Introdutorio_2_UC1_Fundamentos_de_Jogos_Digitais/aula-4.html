@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-touch">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos Digitais - SENAI EAD</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="SENAISP">
+
+  <!-- Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/aula4.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/uc4.css">
+  <script src="./scripts/index.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <a onclick="openNav()"><img src="./img/global/icons/menu.png" class="logoJogos" /></a>
+    <img src="./img/global/icons/logoSenai.png" class="logoJogos" />
+    <div></div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button onclick="openList()" class="accordion"><img src="./img/global/icons/summary.svg"
+        style="margin-right: 10px;">
+      <p>Sumário</p>
+    </button>
+    <div class="panel" id="panelBtn">
+      <ul type="1">
+        <a class="listPanel" href="#contextualizing">
+          <li>1.0 Contextualizando</li>
+        </a>
+        <a class="listPanel" href="#logic">
+          <li>2.0 Consoles para videogames</li>
+        </a>
+        <ul type="1" style="margin-left:20px;">
+          <a class="listPanel" href="#propositional-logic">
+            <li>2.1 CPU</li>
+          </a>
+          <a class="listPanel" href="#propositional-logic">
+            <li>2.2 Medida de desempenho de CPU</li>
+          </a>
+          <a class="listPanel" href="#propositional-logic">
+            <li>2.3 GPU</li>
+          </a>
+          <a class="listPanel" href="#propositional-logic">
+            <li>2.4 Memória RAM</li>
+          </a>
+          <a class="listPanel" href="#propositional-logic">
+            <li>2.5 Disponíveis de Armazenamento</li>
+          </a>
+          <a class="listPanel" href="#propositional-logic">
+            <li>2.6 Perífericos</li>
+          </a>
+
+        </ul>
+
+      </ul>
+
+    </div>
+    <button onclick="changeTheme()" class="accordion">
+      <img src="./img/global/icons/themeIcon.svg" style="margin-right: 10px;" alt="Alterar tema">
+      <p>Alterar tema</p>
+    </button>
+    <button onclick="changeGray()" class="accordion">
+      <img src="./img/global/icons/scaleGrayIcon.svg" style="margin-right: 10px;" alt="Escala de Cinza">
+      <p>Escala de Cinza</p>
+    </button>
+    <div class="accordion2">
+      <div style="display: flex;">
+        <img src="./img/global/icons/textIcon.svg" style="margin-right: 10px;" alt="Tamanho da fonte">
+        <p>Tamanho da fonte</p>
+      </div>
+      <div>
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="homePage">
+
+    <div class="header-title">
+      <div>
+        <h2 class="text-Course" style="color: white;">Curso Técnico em</h2>
+        <h1 class="text-NameCourse">Jogos Digitais</h1>
+      </div>
+
+      <div id="containerBoxTitle">
+        <div class="numberTitle">4</div>
+        <div class="titleHeader">Hardware para Jogos</div>
+      </div>
+
+      <div>
+        <strong class="objectiveLearning">Objetivo de Aprendizagem</strong>
+        <p class="text-DescriptUnit">
+          Reconhecer a estrutura física dos elementos de dispositivos mobile e de consoles
+        </p>
+      </div>
+
+      <div>
+        <p class="text-LetsLearn">Vamos iniciar os estudos</p>
+        <a class="btnPlay" href="#contextualizing">Play</a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./img/global/icons/arrowUpScroll.png"></button>
+  <div class="espaceTitle" id="contextualizing"></div>
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <h1 class="text-Title light-blue">Contextualizando</h1>
+        <h3 class="text-Course">Assista ao vídeo abaixo para uma introdução aos seus estudos</h3>
+
+        <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/1sg9KosVYck"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="dicas">
+          <img src="./img/global/icons/help.png" id="help" style="margin-right: 20px;" />
+          <p>
+            Quais medidas de hardware Ruan deverá levar em conta para escolher a plataforma?
+          </p>
+        </div>
+
+        <p>
+          Nessa Unidade de Estudo - UE você vai aprender sobre hardware para jogos digitais, estudará sobre os consoles,
+          processadores, memórias, armazenamentos e periféricos.
+          E então vamos juntos aprender mais? Afinal, nem só de software vive o programador de Jogos Digitais, é preciso
+          entender de hardware também!
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--Parallax-->
+  <div class="parallax background-parallax1">
+    <div class="cubeBlack">
+      <h1 class="text-Title light-rose">Consoles para videogames</h1>
+      <p>
+        Falar em consoles para videogames pode provocar os mais diversos sentimentos para os apaixonados por games
+        digitais, e isso depende de qual a sua experiência e contato com esses equipamentos. Há quem tenha sensação
+        nostálgica ao lembrar do console da sua infância, tem quem sinta realização e prazer, há também quem já
+        desmontou seu console por pura curiosidade, de repente para entender como funcionava a “mágica” de jogar, tem
+        quem coleciona, quem sabe de detalhes técnicos e da evolução de um para outro. Enfim, existem vários tipos de
+        admiradores de consoles mas, há uma coisa em comum entre eles, que é a arte de jogar usando cada console e seu
+        respectivo joystick.
+      </p>
+
+      <p>
+        E você qual sua experiência com esse equipamento? Você curte explorar sobre esse assunto?
+      </p>
+
+      <p>
+        Os consoles de videogame nasceram com o propósito de serem máquinas dedicadas a executarem jogos eletrônicos com
+        auxílio de periféricos e televisores. A partir de meados dos anos 2000 essa ideia foi ampliada (falaremos disso
+        mais adiante), mas a essência continua a mesma. Portanto, um console nada mais é do que um computador dedicado
+        ao entretenimento, tendo como seu principal objetivo executar jogos eletrônicos.
+      </p>
+
+      <!--Div de aviso com lâmpada-->
+      <div class="atencion my-3 mx-3">
+        <img src="./img/global/icons/lightbulb.png" />
+        <p>
+          Os consoles eram exclusivos para jogos eletrônicos. Com o avanço da internet, hoje em dia são verdadeiras
+          centrais de entretenimento, com acesso a portais de vídeos, filmes e redes sociais.
+        </p>
+      </div>
+
+    </div> <!-- End BlackBox -->
+  </div> <!-- End Parallax -->
+
+  <!--Section-->
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <!--lista com ponto-->
+        <p>
+          Tecnicamente o console é um computador altamente dedicado, isto é, de propósito único. (Um PC é de propósito
+          geral, podendo executar de jogos a planilhas eletrônicas). Devido a essa dedicação ao entretenimento, um
+          console apresenta algumas vantagens em relação a um PC comum (em se tratando apenas de jogos):
+
+          <li class="my-1 mx-1">
+            Costumam ser mais baratos do que um PC Gamer;
+          </li>
+          <li class="my-1 mx-1">
+            Carregam os jogos mais rapidamente na memória;
+
+          </li>
+          <li class="my-1 mx-1">
+            São fáceis de ligar e conectar à TV ou aparelhos de som;
+
+          </li>
+          <li class="my-1 mx-1">
+            Os jogos não apresentam incompatibilidade com o hardware e/ou software do console;
+
+          </li>
+          <li class="my-1 mx-1">
+            Os jogos são desenvolvidos visando obter o máximo de desempenho do hardware;
+
+          </li>
+          <li class="my-1 mx-1">
+            Permitem múltiplos jogadores de forma fácil e amigável.
+
+          </li>
+        </p>
+
+        <p>
+          Essas características são que, pelo fato de ser dedicado, o console está mais preparado para a execução de
+          jogos (não que o PC não possa fazer isso, mas para atingir a mesma excelência é necessário pagar mais caro).
+          Obviamente que os consoles possuem desvantagens, e a principal delas é o preço do jogo e a “fidelidade” que o
+          jogador possui em relação aos estúdios de produção. No PC há diversas lojas de publicação, como a Steam, onde
+          produtores independentes podem lançar os seus jogos (e os grandes estúdios também). Isso aumenta a oferta de
+          bons jogos a preços convidativos. Já nos consoles, o jogador é obrigado a adquirir jogos de estúdios parceiros
+          dos fabricantes. Sendo assim, a oferta de jogos independentes é limitada e há ainda jogos exclusivos para
+          determinados consoles.
+        </p>
+
+        <p>
+          Deixando essas questões de lado, o console nada mais do que um computador, e portanto possui unidades de
+          processamento, armazenamento, memória e conectividade com periféricos. Vamos ver como é feita a arquitetura de
+          hardware para os principais consoles vendidos atualmente (Playstation 5, Xbox, Séries X e Nintendo Switch):
+        </p>
+
+        <!--Subtitulo-->
+        <h1 class="text-subtitle1 dark-rose mx-3">CPU</h1>
+
+        <p>
+          A CPU (Unidade Central de Processamento), ou processador, é a parte do sistema computacional responsável por
+          executar as instruções de um programa. Essas instruções podem ser aritméticas (cálculos), lógicas (de decisão,
+          por exemplo) e entrada e saída de dados.
+        </p>
+
+        <!--Imagem-->
+        <img class="w-75 m-auto" src="./img/ue4/Imagem 1.png" alt="" />
+
+        <!--lista com ponto-->
+        <p>
+          A imagem mostra um sistema de computador composto por 4 partes principais: CPU, Armazenamento, Memória e
+          Entrada / Saída. Você também deve ter notado que a CPU exerce uma função principal no computador. Ela é
+          responsável por processar as informações e distribuí-las pelas diversas áreas. Assim, as principais funções da
+          CPU são:
+
+          <li class="my-1 mx-1">
+            Executar operações de processamento de dados
+          </li>
+          <li class="my-1 mx-1">
+            Armazenar dados, resultados intermediários e as instruções dos programas
+
+          </li>
+          <li class="my-1 mx-1">
+            Controlar o funcionamento das demais peças do computador
+          </li>
+        </p>
+
+        <p>
+          A CPU é composta por três partes principais, conforme mostrado na Figura 2:
+        </p>
+
+        <!--Imagem-->
+        <h1>XXXXXXX - FALTANDO IMAGEM - XXXXXX</h1>
+        <img class="w-75 m-auto" src="./img/ue4/Imagem 1.png" alt="" />
+
+        <p>
+          Cada uma dessas unidades realizam funções específicas:
+        <p>
+          A unidade de memória, também conhecida como memória cache, é responsável por armazenar os dados e as
+          instruções antes e depois do processamento, os resultados intermediários do processamento e as entradas e
+          saídas de dados que chegam e saem do processador.
+        </p>
+        <p>
+          A unidade de controle atua no controle e funcionamento dos dispositivos do computador e também na
+          transferência de dados entre as unidades. Além disso, faz a comunicação com os dispositivos de entrada e
+          saída, sinalizando quando uma instrução pode ser enviada ou obtida por esses dispositivos.
+        </p>
+        <p>
+          A unidade de lógica e aritmética (ULA) é responsável pelo processamento das instruções e é dividida em duas
+          partes: lógica e aritmética. A primeira realiza operações lógicas, tais como comparação e fusão de dados, e a
+          segunda realiza as operações aritméticas como adição, subtração, multiplicação e divisão. (Algumas ULAs
+          realizam apenas adição). Todas as outras operações mais complexas (potência, raiz quadrada, operações
+          trigonométricas, etc) são realizadas através de combinações e repetições das operações aritméticas simples e
+          das operações lógicas.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!--Parallax-->
+  <div class="parallax background-parallax2">
+    <div class="cubeBlack">
+      <h1 class="text-subtitle1 dark-rose mx-3">Medida de desempenho de CPU</h1>
+      <p>
+        Por se tratar de um componente vital ao funcionamento do computador, é interessante ficarmos atentos às medidas
+        de desempenho dos processadores, para que possamos entender qual processador é melhor. A medida mais importante
+        é a quantidade de ciclos por segundo (velocidade de clock), dada em GHz (Giga hertz).
+      </p>
+      <p>
+        Como você deve saber, os computadores são binários, ou seja, trabalham com bits 0 e 1. As informações e
+        instruções somente são processadas na ULA quando há mudança de estado, de 0 para 1. Assim, é necessário que o
+        processador fique alternando seu estado, entre 0 e 1, para que todas as instruções sejam efetivamente
+        processadas. Portanto, quanto maior for a velocidade de clock, mais alternância entre os estados e,
+        consequentemente, mais operações realizadas. Assim, uma CPU de 3,2 GHz é capaz de alterar seu ciclo 3.2 bilhões
+        de vezes por segundo!
+      </p>
+
+      <!--Div de aviso com lâmpada-->
+      <div class="atencion my-3 mx-3">
+        <img src="./img/global/icons/lightbulb.png" />
+        <p>
+          O primeiro computador eletrônico da história, o ENIAC, processava cerca de 500 operações de adição por
+          segundo!
+        </p>
+      </div>
+
+      <p>
+        Com o avanço dos softwares, houve a necessidade de se criar CPUs mais velozes. Mas as limitações físicas de
+        velocidade (nada pode ser mais rápido que a luz) trouxe sérias dificuldades ao desenvolvimento de novos
+        processadores mais velozes. A solução encontrada foi criar chips com diversos processadores atuando ao mesmo
+        tempo. Esse conceito ficou conhecido como multicore. Assim, em teoria, um processador com 4 núcleos (core) de
+        2GHZ poderia realizar 4 X 2 mudanças de ciclos por segundo!
+      </p>
+
+
+    </div> <!-- End BlackBox -->
+  </div> <!-- End Parallax -->
+
+  <!--Section-->
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <p>
+          A capacidade de processamento de uma CPU está ligada à quantidade de ciclos por segundo e também à quantidade
+          de
+          operações que elas realizam por ciclo. Assim, para saber o desempenho real de um processador, foi criada uma
+          medida chamada FLOP. Um FLOP é uma operação aritmética de ponto flutuante (ponto flutuante é a localização da
+          vírgula em números com casas decimais). Por exemplo, a divisão 9 / 5 é uma operação de ponto flutuante. Assim,
+          CPUs de consoles modernos chegam a incríveis 6 Teraflops, isto é, 6 trilhões de operações ponto flutuante por
+          segundo! Segue uma tabela comparativa com os 3 principais consoles da atualidade:
+        </p>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Tabela-->
+  <table class="table-uc4 w-full">
+    <tr id="first">
+      <td>Console</td>
+      <td>Núcleos</td>
+      <td>Clock</td>
+    </tr>
+    <tr>
+      <td>Switch - Nintendo</td>
+      <td>4</td>
+      <td>1.02 GHZ</td>
+    </tr>
+    <tr>
+      <td>Playstation 5 - Sony</td>
+      <td>8</td>
+      <td>3.5 GHZ</td>
+    </tr>
+    <tr>
+      <td>Xbox Series X - Microsoft</td>
+      <td>8</td>
+      <td>3.6 GHZ</td>
+    </tr>
+  </table>
+
+  <!--Section-->
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <h1 class="text-subtitle1 dark-rose mx-3">GPU</h1>
+
+        <p>
+          Um outro dispositivo utilizado para o processamento é a GPU (Unidade de Processamento Gráfico). Esse
+          dispositivo trabalha em conjunto com a CPU mas tem a tarefa de processar apenas informações gráficas, como
+          vídeos, jogos, software de edição de fotos, etc. Esses dispositivos são necessários pois o processamento de
+          conteúdos gráficos demanda muito desempenho do processador. Então, criou-se um dispositivo auxiliar para a CPU
+          para processar apenas os gráficos, deixando a CPU com as outras tarefas.
+        </p>
+
+        <!--Div de aviso com lâmpada-->
+        <div class="atencion my-3 mx-3">
+          <img src="./img/global/icons/lightbulb.png" />
+          <p>
+            Uma imagem é um conjunto de pontos chamado pixel. Cada pixel é composto por 3 valores: a quantidade de cor
+            vermelha, verde e azul (sistema RGB). Quanto maior a quantidade de pixels, melhor será a imagem. Uma imagem
+            4K é composta por 4192 X 4192 pixels com 3 valores cada! Assim, processar uma quantidade tão grande de
+            informação fica dedicada à GPU.
+          </p>
+        </div>
+
+        <p>
+          Assim como nas CPUs, as unidades de medida são similares. A diferença é que CPUs normalmente contam com 4 ou
+          núcleos, as GPUs podem possuir milhares de núcleos organizados em unidades computacionais (UC). Um outro dado
+          importante na análise de GPU é a sua memória dedicada (VRAM), ou seja, a quantidade de memória que é utilizada
+          somente para processamento de gráficos. Quanto maior o valor, maior o desempenho. As GPUs mais modernas podem
+          operar em até 12 Teraflops! Em teoria, quanto maior for a quantidade de teraflops, maior será a capacidade de
+          rodar um jogo em alta resolução na maior taxa de frame. Por exemplo, um Xbox Series X pode rodar um jogo com
+          resolução 4K a 120 FPS.
+        </p>
+
+        <!--Div de aviso com lâmpada-->
+        <div class="atencion my-3 mx-3">
+          <img src="./img/global/icons/lightbulb.png" />
+          <p>
+            A taxa FPS é a quantidade de frames processadas por segundo. Quanto maior, melhor será a fluidez do jogo. um
+            frame é como se fosse uma imagem estática (uma foto). Assim, 120 frames por segundo é como se fossem
+            exibidas 120 fotografias por segundo. O olho humano, a partir de 24 FPS, já percebe como uma animação.
+          </p>
+        </div>
+
+        <p>
+          A seguir, um comparativo entre as GPUs dos 3 principais consoles:
+        </p>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Tabela-->
+  <table class="table-uc4 w-full">
+    <tr id="first">
+      <td>Console</td>
+      <td>Núcleos</td>
+      <td>Clock</td>
+      <td>Teraflops</td>
+    </tr>
+    <tr>
+      <td>Switch</td>
+      <td>256 núcleos</td>
+      <td>0.768 GHz</td>
+      <td>0.4 Tflop</td>
+    </tr>
+    <tr>
+      <td>PS 5</td>
+      <td>36 UC</td>
+      <td>2.23 GHz</td>
+      <td>10.28 Tflop</td>
+    </tr>
+    <tr>
+      <td>Xbox Series X</td>
+      <td>52 UC</td>
+      <td>1.825 GHz</td>
+      <td>12.15 Tflop</td>
+    </tr>
+  </table>
+
+  <!--Section-->
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Memória ram</h1>
+
+        <p>
+          A memória RAM é responsável pelo armazenamento de informações necessárias para a execução de aplicativos em
+          uso e para o funcionamento do próprio sistema operacional. Essa peça, inclusive, facilita o trabalho do
+          processador que pode acessar os dados essenciais mais rapidamente. A memória RAM faz a ponte entre o
+          processador e os dispositivos de armazenamento, que são muito mais lentos. Assim, ao processar uma informação,
+          a CPU a transfere para a RAM e essa poderá transferir ao disco.
+        </p>
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <p>
+          Um outro valor a ser analisado é o tamanho da memória RAM do console. Esse valor indica a capacidade máxima de
+          armazenamento e quanto maior melhor. Um valor mais alto significa que a RAM fará menos interações com o disco
+          (a velocidade do disco é muito mais lenta do que a do processador) melhorando o desempenho geral do sistema. A
+          seguir, uma tabela comparativa das memórias RAM dos principais consoles:
+        </p>
+
+        <!--Tabela-->
+        <table class="table-uc4 w-full">
+          <tr id="first">
+            <td>Console</td>
+            <td>DDR</td>
+            <td>Tamanho</td>
+            <td>Taxa</td>
+          </tr>
+          <tr>
+            <td>Switch</td>
+            <td>4</td>
+            <td>4 GB</td>
+            <td>25 GB / s</td>
+          </tr>
+          <tr>
+            <td>PS 5</td>
+            <td>6</td>
+            <td>16 GB</td>
+            <td>448 GB / s</td>
+          </tr>
+          <tr>
+            <td>Xbox Series X</td>
+            <td>6</td>
+            <td>16 GB</td>
+            <td>560 GB / s</td>
+          </tr>
+        </table>
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Dispositivos de armazenamento</h1>
+
+        <p>
+          Os dispositivos de armazenamento são responsáveis por guardar as informações persistentes dos programas, isto
+          é, as informações que serão mantidas mesmo após o desligamento do computador. Assim, um jogo pode ser
+          armazenado em disco ou uma mídia óptica e ser carregado na memória na hora em que você for jogar. As
+          informações do jogo, como pontuação, troféus, game saves, etc também são armazenadas em disco. Existem 4 tipos
+          básicos de dispositivos de armazenamento:
+        </p>
+
+        <div class="grid mtop-1">
+          <div class="flex-and-grid-2">
+            <img src="./img/ue4/icons/CD.svg" />
+            <p class="mx-3">
+              <b>Ópticos:</b> CD, DVD, BluRay. Permitem apenas leitura e não gravação. Os consoles e PCs de última
+              geração já
+              abandonaram esse tipo de mídia, mas estão presentes em consoles de 8ª geração. Traz o software principal
+              do jogo, com todas as suas informações e trabalham em conjunto com dispositivos internos.
+            </p>
+          </div>
+
+          <div class="flex-and-grid-2 mtop-1">
+            <img src="./img/ue4/icons/HD.svg" />
+            <p class="mx-3">
+              <b>HD:</b> dispositivo interno de armazenamento, permitindo leitura e gravação. É barato porém muito
+              lento,
+              devido ao fato de seu processo ser mecânico (lembra as antigas vitrolas de vinil) com discos magnéticos e
+              braços mecânicos de leitura e escrita.
+            </p>
+          </div>
+
+          <div class="flex-and-grid-2 mtop-1">
+            <img src="./img/ue4/icons/SSD.svg" />
+            <p class="mx-3">
+              <b>SSD:</b> são discos de estado sólido e seu armazenamento é baseado em lógica, assim como nas memórias
+              RAM. São mais rápidos e é o padrão atual dos consoles.
+            </p>
+          </div>
+
+          <div class="flex-and-grid-2 mtop-1">
+            <img src="./img/ue4/icons/PEN.svg" />
+            <p class="mx-3">
+              <b>Flash:</b> podem ser discos, cartões e pen-drives utilizados para ampliar a capacidade de armazenamento
+              interna. Usam tecnologia semelhante ao SSD, mas são mais lentos pois utilizam cabos USB para se
+              comunicarem. Existem também as memórias Flash interna, que são mais rápidas porém menores.
+            </p>
+          </div>
+        </div>
+
+        <p>
+          As medidas de desempenho para os dispositivos de armazenamento são a capacidade máxima (em bytes) e a taxa de
+          transferência de dados (bytes por segundo). Quanto maior esses valores, melhor será o desempenho. Segue uma
+          tabela com a comparação de armazenamento dos principais consoles:
+        </p>
+
+        <!--Tabela-->
+        <table class="table-uc4 w-full">
+          <tr id="first">
+            <td>Console</td>
+            <td>Tecnologia</td>
+            <td>Capacidade</td>
+            <td>Taxa de transferência</td>
+          </tr>
+          <tr>
+            <td>Switch</td>
+            <td>Flash</td>
+            <td>32 GB interna,
+              expansível até
+              2TB</td>
+            <td>Depende da tecnologia
+              da expansão, podendo
+              chegar a 95 MB / s</td>
+          </tr>
+          <tr>
+            <td>PS 5</td>
+            <td>SSD</td>
+            <td>825 GB</td>
+            <td>448 GB / s</td>
+          </tr>
+          <tr>
+            <td>Xbox Series X</td>
+            <td>SSD</td>
+            <td>1 TB</td>
+            <td>560 GB / s</td>
+          </tr>
+        </table>
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Periféricos</h1>
+
+        <p>
+          Para se ter uma experiência completa com videogames é necessário ter em mãos alguns dispositivos periféricos.
+          Esses dispositivos são externos aos consoles e são conectados via cabos ou wireless. Alguns periféricos, como
+          joysticks e monitores são essenciais ao jogo, enquanto outros como teclado, mouse, óculos de realidade virtual
+          são opcionais. Vamos nos ater apenas nos joysticks veja o vídeo a seguir:
+        </p>
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <p>
+          Nesta UE você viu como funciona o hardware de um console e a evolução em seus joysticks. Você aprendeu a
+          avaliar o desempenho dos principais dispositivos de um console. Bateu a ansiedade de programar jogos para
+          vê-los rodando em consoles que você gosta? Não tenha limites para sonhar,pois com esforço, dedicação e muita
+          criatividade você alçará voos altos. Tenho certeza que construirá ótimos games. Bons estudos e até a próxima!
+        </p>
+
+        <div class="flex justify-center w-full">
+          <img src="./img/ue1/check.svg" />
+          <p class="px-3" id="check-green-word"> Solução do problematizando</p>
+        </div>
+        <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/zsTTj9437MM"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <div class="containerFooter row">
+    <a class="row" href="aula-3.html">
+      <img class="arrowImg" src="img/global/icons/previusclass.png" />
+      <p class="btnDesafio">Desafio anterior</p>
+    </a>
+    <a class="row" href="aula-5.html">
+      <p class="btnDesafio">Próximo Desafio</p>
+      <img class="arrowImg" src="img/global/icons/nextclass.png" />
+    </a>
+  </div>
+
+
+
+
+  <!-- Libras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-touch">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos Digitais - SENAI EAD</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="SENAISP">
+
+  <!-- Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/aula6.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./scripts/index.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <a onclick="openNav()"><img src="./img/global/icons/menu.png" class="logoJogos" /></a>
+    <img src="./img/global/icons/logoSenai.png" class="logoJogos" />
+    <div></div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button onclick="openList()" class="accordion"><img src="./img/global/icons/summary.svg"
+        style="margin-right: 10px;">
+      <p>Sumário</p>
+    </button>
+    <div class="panel" id="panelBtn">
+      <ul type="1">
+        <a class="listPanel" href="#contextualizing">
+          <li>1.0 Contextualizando</li>
+        </a>
+        <a class="listPanel" href="#software">
+          <li>2.0 Software para console</li>
+        </a>
+        <ul type="1" style="margin-left:20px;">
+          <a class="listPanel" href="#so">
+            <li>2.1 Sistemas Operacionais</li>
+          </a>
+          <ul type="1" style="margin-left:20px;">
+            <a class="listPanel" href="#playstation-so">
+              <li>2.1.1 Sistema operacional Playstation</li>
+            </a>
+            <a class="listPanel" href="#xbox-so">
+              <li>2.1.2 Sistema operacional Xbox</li>
+            </a>
+          </ul>
+          <a class="listPanel" href="#so-components">
+            <li>2.2 Componentes de um sistema operacional</li>
+          </a>
+          <a class="listPanel" href="#process">
+            <li>2.3 Gerenciamento de processos</li>
+          </a>
+          <a class="listPanel" href="#memory">
+            <li>2.4 Gerenciamento de memória</li>
+          </a>
+          <a class="listPanel" href="#resources">
+            <li>2.5 Gerenciamento de recursos</li>
+          </a>
+          <a class="listPanel" href="#data">
+            <li>2.6 Entrada e saída de dados (I/O)</li>
+          </a>
+          <a class="listPanel" href="#archive">
+            <li>2.7 Sistema de arquivos</li>
+          </a>
+          <a class="listPanel" href="#multiprocessors">
+            <li>2.8 Sistemas multiprocessadores</li>
+          </a>
+        </ul>
+
+      </ul>
+
+    </div>
+    <button onclick="changeTheme()" class="accordion">
+      <img src="./img/global/icons/themeIcon.svg" style="margin-right: 10px;" alt="Alterar tema">
+      <p>Alterar tema</p>
+    </button>
+    <button onclick="changeGray()" class="accordion">
+      <img src="./img/global/icons/scaleGrayIcon.svg" style="margin-right: 10px;" alt="Escala de Cinza">
+      <p>Escala de Cinza</p>
+    </button>
+    <div class="accordion2">
+      <div style="display: flex;">
+        <img src="./img/global/icons/textIcon.svg" style="margin-right: 10px;" alt="Tamanho da fonte">
+        <p>Tamanho da fonte</p>
+      </div>
+      <div>
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="homePage">
+
+    <div class="header-title">
+      <div>
+        <h2 class="text-Course" style="color: white;">Curso Técnico em</h2>
+        <h1 class="text-NameCourse">Jogos Digitais</h1>
+      </div>
+
+      <div id="containerBoxTitle">
+        <div class="numberTitle">6</div>
+        <div class="titleHeader">Software</div>
+      </div>
+
+      <div>
+        <strong class="objectiveLearning">Objetivo de Aprendizagem</strong>
+        <p class="text-DescriptUnit">
+          Reconhecer a estrutura física e lógica dos elementos de dispositivos mobile e de consoles
+        </p>
+      </div>
+
+      <div>
+        <p class="text-LetsLearn">Vamos iniciar os estudos</p>
+        <a class="btnPlay" href="#contextualizing">Play</a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./img/global/icons/arrowUpScroll.png"></button>
+  <div class="espaceTitle" id="contextualizing"></div>
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <h1 class="text-Title light-blue">Contextualizando</h1>
+        <h3 class="text-Course">Assista ao vídeo abaixo para uma introdução
+          aos seus estudos</h3>
+
+        <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/qOSK4RgOQ18"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="dicas">
+          <img src="./img/global/icons/help.png" id="help" style="margin-right: 20px;" />
+          <p>
+            Como Suzana poderia desenvolver seu sistema operacional - SO? Quais as funcionalidades básicas deveriam ser
+            disponibilizadas?
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <h1 class="text-Title light-rose">Software para console</h1>
+        <h1 class="text-subtitle1 dark-rose mx-3">Sistemas Operacionais</h1>
+
+        <p>
+          Antes de falarmos em específico sobre o software dedicado aos consoles, quero te apresentar uma introdução
+          básica sobre o conceito de sistemas operacionais. Bem, basicamente um S.O. é um software que tem como função
+          gerenciar os recursos do sistema. Ele define, por exemplo, quais os programas que devem ser processados pela
+          CPU, o acesso a memória RAM, a criação e leitura de arquivos em discos, o controle dos barramentos da
+          placa-mãe e todos os outros dispositivos de I/O (entrada e saída).
+        </p>
+
+        <p>
+          O SO é o encarregado de fazer a ponte entre software e hardware. Sendo assim, esses sistemas devem ser
+          pensados para extrair o máximo de recursos do hardware e otimizar seu desempenho.
+        </p>
+
+        <p>
+          Independentemente da arquitetura de hardware (mobile, desktop, console), todo computador precisa de um SO para
+          funcionar. Isso porque, ao ligarmos um dispositivo, as informações básicas são carregadas de uma memória
+          não-volátil, conhecida como BIOS, que faz a checagem se os componentes estão em perfeito funcionamento. Após
+          isso, a tarefa de controlar todo o processo é entregue ao SO, que geralmente está armazenado em disco. Ao
+          término da inicialização do SO, o computador está pronto para ser utilizado. A figura a seguir representa um
+          esquema de como é o processo do SO:
+        </p>
+
+        <!--Imagem-->
+        <img class="w-75 m-auto" src="./img/ue6/UC1 - M2-10.jpg"
+          alt="Refrigerador de CPU com quatro parafusos para fixação do dispositivo no gabinete." />
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Parallax-->
+  <div class="parallax background-parallax1">
+    <div class="cubeBlack">
+
+      <p>
+        Por exemplo, quando desejamos instalar um novo jogo em nosso aparelho, é o Sistema Operacional quem vai
+        interagir com o disco para verificar espaço e gravar todos os arquivos necessários. Quando instalado, ao
+        iniciarmos o jogo, o SO carrega esses arquivos em disco para a memória RAM.
+      </p>
+      <p>
+        Atualmente há dois grandes grupos de SO disponíveis para os fabricantes de hardware, são eles: O Windows,
+        fornecido pela Microsoft e o sistema UNIX. Esse último é um sistema básico, chamado de kernel, onde os
+        desenvolvedores podem utilizá-los para criarem seus próprios sistemas operacionais. Por exemplo, todos os
+        sistemas Linux, os sistemas da Apple e o próprio Android, da Google, são baseados em UNIX. Mas qual o impacto
+        disso no desenvolvimento de jogos?
+      </p>
+      <p>
+        Para os desenvolvedores de games é necessário saber exatamente qual é o SO do dispositivo alvo para que o
+        desenvolvimento possa ser direcionado a essa plataforma.
+      </p>
+      <p>
+        Em outras palavras, se eu pretendo desenvolver um game para Windows, então é necessário trabalhar com as
+        bibliotecas próprias para Windows. Os desktops e mobiles, por serem computadores de uso geral, possuem seus
+        SO`s
+        mais acessíveis e é mais fácil desenvolver games para essas plataformas.
+      </p>
+
+
+    </div> <!-- End BlackBox -->
+  </div> <!-- End Parallax -->
+
+  <!--Section-->
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <p>
+          Em contrapartida, os consoles são de uso restrito (apenas para jogos e entretenimento) e possuem SO`s mais
+          específicos. Sendo assim, o processo de desenvolvimento para console requer equipes mais qualificadas e
+          conhecimento profundo sobre o SO da plataforma.
+        </p>
+        <p>
+          Vamos então conhecer características dos principais sistemas operacionais de games? Você não pode perder esse
+          conhecimento.
+        </p>
+
+        <!--sub Subtitulo-->
+        <h1 class="text-subtitle2 green mx-5">Sistema operacional Playstation</h1>
+
+        <p>
+          A família PS, desde a versão 4, é equipada com um Sistema Operacional chamado Orbis, que por sua vez é baseado
+          no sistema Linux FreeBSD. A grande diferença para os sistemas que rodam em desktop (como o FreeBSD) é que o
+          Orbis fornece API`s específicas para games.
+        </p>
+
+        <!--Div de aviso com lâmpada-->
+        <div class="atencion my-3 mx-3">
+          <img src="./img/global/icons/lightbulb.png" />
+          <p>
+            Uma API (interfação de programação de aplicativos) é um conjunto de rotinas que os softwares podem
+            disponibilizar aos desenvolvedores. Por exemplo, o Maps é uma API do Google utilizada para ter acesso ao
+            sistema de mapas e coordenadas. A vantagem dessas interfaces é que o programador não precisa saber como uma
+            API funciona, mas sim quais as informações que devem ser enviadas a ela.
+          </p>
+        </div>
+
+        <p>
+          No caso do Orbis, há API`s específicas para o gerenciamento de GPUs e também para dispositivos de realidade
+          virtual, tal como óculos. Assim, os desenvolvedores de games para PS podem gerenciar o processamento gráfico
+          de seus games de forma muito mais eficiente, devido às características do sistema operacional Orbis.
+        </p>
+        <!--sub Subtitulo-->
+        <h1 class="text-subtitle2 green mx-5">Sistema operacional Xbox</h1>
+
+        <p>
+          O mesmo conceito utilizado para Playstation vale para Xbox. como é um sistema dedicado a jogos e
+          entretenimento, o SO da plataforma Xbox também é específico. Neste caso, ele é baseado em Windows e se chama
+          OneCore. Assim como em Playstation, a diferença do OneCore para um Windows tradicional é que ele disponibiliza
+          APIs específicas para o processamento de imagens.
+        </p>
+        <p>
+          Como você já pode ter imaginado, por se tratar de sistemas operacionais distintos, os jogos feitos para
+          Playstation e XBOX não são compatíveis. Os estúdios que desejam desenvolver para ambas as plataformas devem
+          ter desenvolvimento específicos para cada uma delas.
+        </p>
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <!--Subtitulo-->
+        <h1 class="text-subtitle1 dark-rose mx-3">Componentes de um sistema operacional</h1>
+
+        <p>
+          A definição de sistemas operacionais se divide em duas partes: a primeira diz que o SO é um intermediário, não
+          sendo nem software nem hardware, mas sim uma ponte entre os dois elementos.
+        </p>
+        <p>
+          A segunda, que o SO é um gerenciador de recursos que controla as aplicações a serem executadas e todos os
+          recursos de hardware que elas consomem. Aqui, essa segunda visão se encaixa melhor e nos possibilita entender
+          como é feito esse gerenciamento.
+        </p>
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <p>
+          Vamos conhecer como funciona cada um deles e qual o seu papel nesse sistema de controle:
+        </p>
+
+        <!--Subtitulo-->
+        <h1 class="text-subtitle1 dark-rose mx-3">Gerenciamento de processos</h1>
+
+        <p>
+          Para rodar um software é necessário vários processos sendo executados ao mesmo tempo. Para melhor compreensão,
+          dê o play no vídeo a seguir.
+        </p>
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <!--Subtitulo-->
+        <h1 class="text-subtitle1 dark-rose mx-3">Gerenciamento de memória</h1>
+
+        <p>
+          A função principal desse módulo do SO é gerenciar o funcionamento da memória RAM. Como sabemos, o acesso a
+          dados presentes em disco é bem lento. Assim, a estratégia é carregar esses dados diretamente na memória RAM,
+          para que o acesso seja mais rápido e consequentemente seu software tenha um desempenho satisfatório. Cada
+          célula da RAM possui um endereço, e são nesses endereços que são armazenados os dados. Para melhor
+          compreensão, dê o play no vídeo a seguir.
+        </p>
+
+        <!--vídeo-->
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Gerenciamento de recursos</h1>
+
+        <p>
+          Esse é um módulo de extrema importância. A CPU é o principal componente do computador e todos os softwares
+          precisam utilizá-la. Como então gerenciar as solicitações conflitantes, ou seja, aquelas que chegam ao mesmo
+          tempo à CPU?
+        </p>
+        <p>
+          O módulo de gerenciamento de recursos é quem organiza essa fila. E não somente da CPU, mas de todos os
+          recursos críticos: GPU, barramentos (que são as “estradas” por onde trafegam os dados), RAM e armazenamento em
+          disco.
+        </p>
+
+        <p>
+          Assim, o SO fornece prioridades aos processos (isso funciona de forma análoga a um hospital: não importa
+          quanto tempo você está esperando, se chegar um paciente com um caso mais grave, os recursos médicos serão
+          destinados a ele) e organiza quem deve ser atendido primeiro. Por exemplo, softwares anti-vírus ou mecanismos
+          de proteção a falhas e erros (como por exemplo, divisão por zero), possuem as mais altas prioridades dentro do
+          SO.
+        </p>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Parallax-->
+  <div class="parallax background-parallax2">
+    <div class="cubeBlack">
+      <h1 class="text-subtitle1 dark-rose mx-3">Entrada e saída de dados (I/O)</h1>
+      <p>
+        Os dados que são processados pelo computador são, na maioria das vezes, oriundos de dispositivos externos
+        (mouse, teclado, joystick etc) e são exibidos aos usuários também por dispositivos externos (tela, monitor,
+        impressora). Esses dispositivos são compartilhados por todos os processos (afinal, você só tem um teclado em seu
+        PC, tanto para digitar um texto no Word quanto para um endereço no browser).
+      </p>
+      <p>
+        Você já pode imaginar que há uma forte concorrência entre os softwares para o acesso a esses dispositivos. Logo,
+        a função principal desse módulo de I/O do sistema operacional é controlar essas “disputas”. Além disso, o I/O
+        também gerencia como as informações chegam e partem da CPU com destino a esses dispositivos. Por exemplo,
+        existem inúmeros fabricantes de mouses, cada um com sua configuração.
+      </p>
+      <p>
+        A CPU não conhece todos esses fabricantes e como todos os mouses funcionam. Ela simplesmente recebe, processa e
+        envia os dados. A função de conhecer todos os mouses (e todos os demais dispositivos periféricos) é do SO, mais
+        precisamente do módulo I/O.
+      </p>
+      <p>
+        Portanto, os fabricantes de periféricos devem fornecer aos desenvolvedores de SO um pequeno software que mostra
+        ao módulo I/O como ele deve converter o sinal enviado pelo periférico em informações legíveis para a CPU. Esses
+        pequenos softwares são chamados de drivers. A maioria dos periféricos são plug-and-play, ou seja, seus drivers
+        já estão embutidos no SO. Outros, como impressoras ou óculos VR, é necessário baixar o software de instalação em
+        um site na internet.
+      </p>
+    </div> <!-- End BlackBox -->
+  </div> <!-- End Parallax -->
+
+  <!--Section-->
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Sistema de arquivos</h1>
+
+        <p>
+          Como sabemos, a memória RAM é volátil, isto é, ao deixar de ser alimentada com corrente elétrica, os dados
+          presentes são apagados. Isso leva a necessidade de se gravar informações em sistemas não-voláteis (como discos
+          e cartões de memória). Imagina você não poder gravar o progresso de seu jogo, e ao desligar o videogame perder
+          tudo o que você fez.
+        </p>
+
+        <p>
+          Para que isso não aconteça, o SO possui um módulo de gerencia de arquivos, que faz a leitura e gravação de
+          dados em disco. Assim, esse módulo tanto carrega os dados em disco para a memória quanto “salva” as
+          informações da RAM em disco.
+        </p>
+
+        <p>
+          Para aumentar o desempenho e prolongar a vida útil do disco, o SO não apaga os dados diretamente no disco (ao
+          menos que você o formate). Quando você apaga um arquivo no disco, na verdade ele continua fisicamente alí e a
+          estratégia “esperta” do SO é disponibilizar a área ocupada pelo arquivo para uma sobrescrita. Isso poupa a
+          vida útil do disco (cada processo de formatação diminui o tempo de duração dos sistemas semicondutores) e
+          aumenta o desempenho (apagar literalmente um dado do disco demora bastante tempo).
+        </p>
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Sistemas multiprocessadores</h1>
+
+        <p>
+          Atualmente a maioria dos processadores possuem diversos núcleos de processamento, conhecidos como Core. Eles
+          se comportam como unidades de processamento independentes e cabe ao SO direcionar para qual núcleo a
+          informação será processada.
+        </p>
+
+        <p>
+          Sendo assim, os sistemas operacionais devem ser capazes de lidar com esse tipo de configuração de
+          processamento. Para tanto, eles podem ser de dois tipos: simétricos, quando todos os núcleos da CPU possuem a
+          mesma função; ou assimétricos, que funciona na configuração master-slave: um núcleo principal (master),
+          geralmente dedicado às tarefas do SO, e os demais (slaves) subordinados ao master.
+        </p>
+        <p>
+          Por fim, temos os sistemas operacionais distribuídos. Eles estão presentes em clusters de computadores e são
+          responsáveis pelo gerenciamento de recursos e processos em seus próprios dispositivos quanto enviar mensagens
+          para os demais computadores do cluster. Esse tipo de configuração é utilizado em sistemas que demandam alta
+          capacidade de processamento, tais como servidores. Assim, aquele seu jogo on-line favorito muito provavelmente
+          está rodando em um cluster computacional.
+        </p>
+
+        <!--Div de aviso com lâmpada-->
+        <div class="atencion my-3 mx-3">
+          <img src="./img/global/icons/lightbulb.png" />
+          <p>
+            Um cluster computacional é um sistema composto por diversos computadores, cada um com seu SO, CPU e memória
+            próprios, que atuam como se fossem um único computador. Os dados a processar são divididos entre os diversos
+            computadores, que trocam informações entre si através de sistemas de rede (cabo ou wireless).
+          </p>
+        </div>
+
+        <p>
+          Nessa UE você conheceu um pouco como funcionam os sistemas operacionais, quais são suas funções e como eles
+          estão presentes nos consoles. Agora responda às seguintes questões:
+        </p>
+
+        <div style="display: flex; align-items:center; margin-bottom: 40px;">
+          <p id="question-number"
+            style="margin-right: 30px; align-self: center; justify-content: center; text-align: center;">
+            1
+          </p>
+
+          Complete a frase:
+        </div>
+
+
+
+        <div>
+          O módulo <input type="text" id="form-text" class="value1" name="value1" placeholder="Digite Aqui" /> é
+          responsável por organizar a fila de processamento na CPU
+        </div>
+
+        <br />
+        <br />
+        <div style="display: flex; align-items:center; margin-bottom: 40px;">
+          <p id="question-number"
+            style="margin-right: 30px; align-self: center; justify-content: center; text-align: center;">
+            2
+          </p>
+
+          Assinale verdadeiro ou falso:
+        </div>
+
+        <br />
+
+
+        <div>
+          (<input type="text" id="form-option" class="value2" name="value2" />)
+          O sistema operacional não deve gerenciar as informações que chegam através do teclado. Isso é tarefa única
+          da CPU.
+        </div>
+        <br />
+        <div>
+          (<input type="text" id="form-option" class="value3" name="value3" />)
+          O processo de swap feito por um SO é
+          importante pois garante que os dados de um programa sempre estejam
+          disponíveis na memória na hora em que for preciso.
+        </div>
+
+        <button id="button-submit-form" onclick="checkQuestion()">
+          Enviar
+        </button>
+
+
+        <div id="container-points-false">
+          <img src="./img/ue5/icons/x.svg" />
+          <p id="pontos-totais">
+            Quase lá, você acertou 0/3. Tente novamente!
+          </p>
+        </div>
+
+        <div id="container-points-true">
+          <img src="./img/ue5/icons/v.svg" />
+          <p id="pontos-totais">
+            Parabéns, você acertou todas!
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <div class="containerFooter row">
+    <a class="row" href="aula-5.html">
+      <img class="arrowImg" src="img/global/icons/previusclass.png" />
+      <p class="btnDesafio">Desafio anterior</p>
+    </a>
+    <a class="row" href="aula-7.html">
+      <p class="btnDesafio">Próximo Desafio</p>
+      <img class="arrowImg" src="img/global/icons/nextclass.png" />
+    </a>
+  </div>
+
+  <!-- Libras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script src="./scripts/aula6.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

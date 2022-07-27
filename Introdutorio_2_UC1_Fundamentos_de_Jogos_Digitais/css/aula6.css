@@ -1,0 +1,134 @@
+.background-parallax1{
+    background-image: url('../img/ue6/parallax/paralax\ 1\ ue6.jpg');
+  }
+
+  .background-parallax2{
+    background-image: url('../img/ue6/parallax/paralax\ 2\ ue6.jpg');
+  }
+
+  #container-points-false{
+    width: 60%;
+    display: flex;
+    align-self: center;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    align-items: center;
+    align-content: flex-start;
+    margin-top: 80px;
+    min-height: 80px;
+}
+
+#container-points-false img{
+    max-width: 10%;
+    align-self: center;
+    flex: 1;
+}
+#container-points-false p{
+    flex: 1;
+}
+
+
+#container-points-true{
+    width: 60%;
+    display: none;
+    align-self: center;
+    border: 1px solid #2AB863;
+    border-radius: 8px;
+    align-items: center;
+    align-content: flex-start;
+    margin-top: 80px;
+    min-height: 80px;
+    
+}
+#container-points-true img{
+    max-width: 10%;
+    align-self: center;
+    flex: 1;
+}
+#container-points-true p{
+    flex: 1;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #container-drag-and-drop{
+        width: 100%;
+    
+    }
+    
+    .board{
+        height: 100px;
+    
+    
+    }
+    .board img{
+        width: 30%;
+        height: 100%;
+    }
+
+    .card p{
+        font-size: 55%;
+    }
+
+    #container-points-false{
+        width: 100%;
+    }
+
+    #container-points-true{
+        width: 100%;
+    }
+}
+
+
+  #form-option{
+    background: none;
+    border: none;
+    width: 20px;
+    color: #A42AB8;
+    padding-left: 10px;
+}
+
+#form-option:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+#form-text{
+  background: none;
+  border: 1px solid #A42AB8;
+  border-radius: 8px;
+  width: 120px;
+  height: 30px;
+  color: #A42AB8;
+  padding-left: 10px;
+}
+
+#form-text:focus{
+  outline: 0;
+  box-shadow: none;
+}
+
+#form{
+display: flex;
+flex-direction: column;
+}
+
+#question-number{
+    border: 1px solid #DC3CF7;
+    border-radius: 90px;
+    width: 30px;
+}
+
+
+#button-submit-form{
+    background-color: transparent;
+    border: 1px solid #DC3CF7;
+    width: 120px;
+    height: 50px;
+    color: #DC3CF7;
+    border-radius: 24px ;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,38 @@
+
+.background-parallax1{
+    background-image: url('../img/ue2/parallax/Imagem\ 1.png');
+  }
+  .background-parallax2 {
+    background-image: url('../img/ue2/parallax/Imagem\ 2.png');
+  }
+  
+  
+  #time-manegement-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.time-manegement-job{
+    display: flex;
+    flex-direction: row;
+}
+
+.time-manegement-job-img{
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 20px;
+    width: 10%;
+    max-width: 20%;
+    display: flex; 
+
+}
+.time-manegement-job-img img{
+    max-width: 100%;
+
+}
+
+.time-manegement-job-txt{
+    width: 80%;
+    max-width: 80%;
+}

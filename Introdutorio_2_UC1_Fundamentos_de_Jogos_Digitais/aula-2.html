@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-touch">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos Digitais - SENAI EAD</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="SENAISP">
+
+  <!-- Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/aula2.css">
+
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/uc4.css">
+  <script type="text/javascript" src="./scripts/jquery.js"></script>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/aula2.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <a onclick="openNav()"><img src="./img/global/icons/menu.png" class="logoJogos" /></a>
+    <img src="./img/global/icons/logoSenai.png" class="logoJogos" />
+    <div></div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button onclick="openList()" class="accordion"><img src="./img/global/icons/summary.svg"
+        style="margin-right: 10px;">
+      <p>Sumário</p>
+    </button>
+    <div class="panel" id="panelBtn">
+      <ul type="1">
+        <a class="listPanel" href="#contextualizing">
+          <li>1.0 Contextualizando</li>
+        </a>
+        <a class="listPanel" href="#games-cicle">
+          <li>2.0 Ciclo de produção de jogos</li>
+        </a>
+        <ul type="1" style="margin-left:20px;">
+          <a class="listPanel" href="#conception">
+            <li>2.1 Concepção ou conceito</li>
+          </a>
+          <a class="listPanel" href="#planning">
+            <li>2.2 Pré-produção ou planejamento</li>
+          </a>
+          <a class="listPanel" href="#prototype">
+            <li>2.3 Protótipo</li>
+          </a>
+          <a class="listPanel" href="#production">
+            <li>2.4 Produção</li>
+          </a>
+          <a class="listPanel" href="#beta">
+            <li>2.5 Versão Beta</li>
+          </a>
+          <a class="listPanel" href="#gold-version">
+            <li>2.6 Versão Ouro</li>
+          </a>
+          <a class="listPanel" href="#pos-production">
+            <li>2.7 Pós-produção</li>
+          </a>
+
+        </ul>
+
+      </ul>
+
+    </div>
+    <button onclick="changeTheme()" class="accordion">
+      <img src="./img/global/icons/themeIcon.svg" style="margin-right: 10px;" alt="Alterar tema">
+      <p>Alterar tema</p>
+    </button>
+    <button onclick="changeGray()" class="accordion">
+      <img src="./img/global/icons/scaleGrayIcon.svg" style="margin-right: 10px;" alt="Escala de Cinza">
+      <p>Escala de Cinza</p>
+    </button>
+    <div class="accordion2">
+      <div style="display: flex;">
+        <img src="./img/global/icons/textIcon.svg" style="margin-right: 10px;" alt="Tamanho da fonte">
+        <p>Tamanho da fonte</p>
+      </div>
+      <div>
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="homePage">
+    <div class="header-title">
+      <div>
+        <h2 class="text-Course" style="color: white;">Curso Técnico em</h2>
+        <h1 class="text-NameCourse">Jogos Digitais</h1>
+      </div>
+      <div id="containerBoxTitle">
+        <div class="numberTitle">2</div>
+        <div class="titleHeader">Ciclo</div>
+      </div>
+      <div>
+        <strong class="objectiveLearning">Objetivo de Aprendizagem</strong>
+        <p class="text-DescriptUnit">Reconhecer a evolução histórica e tecnológica dos jogos digitais</p>
+      </div>
+      <div>
+        <p class="text-LetsLearn">Vamos iniciar os estudos</p>
+        <a class="btnPlay" href="#contextualizing">Play</a>
+      </div>
+    </div>
+  </header>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./img/global/icons/arrowUpScroll.png"></button>
+  <div class="espaceTitle" id="contextualizing"></div>
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <div>
+          <div class="espaceTitle" id="contextualizing"></div>
+          <h1 class="text-Title light-blue">Contextualizando</h1>
+          <p>
+            Assista ao vídeo abaixo para uma introdução
+            aos seus estudos
+          </p>
+
+        </div>
+        <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/LYfA8cpOshQ"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="dicas">
+          <img src="./img/global/icons/help.png" id="help" style="margin-right: 20px;" />
+          <p>
+            Qual a linguagem de programação mais apropriada para o desenvolvimento do sistema que Marcos poderá
+            utilizar? O uso de APIs e Frameworks são necessários?
+          </p>
+        </div>
+
+        <h1 class="text-Title light-rose">Ciclo de produção de jogos</h1>
+
+        <p>
+          O processo de produção de jogos compreende diversas etapas: concepção, pré-produção, produção e finalização.
+          Dentre essas etapas, há diversos entregáveis, ou seja, aquilo que se espera após a conclusão de cada etapa.
+          Por exemplo, o que se espera após a etapa de finalização é o jogo já testado e pronto para ser lançado. A
+          imagem, a seguir, mostra os principais entregáveis do processo de produção de um jogo:
+        </p>
+
+        <!--Imagem-->
+        <img class="w-75 m-auto" src="./img/ue2/Imagem 1.png" alt="" />
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Parallax-->
+  <div class="parallax background-parallax1">
+    <div class="cubeBlack">
+      <h1 class="text-subtitle1 dark-rose mx-3">Concepção ou conceito</h1>
+
+      <p>
+        A etapa de concepção é a fase inicial na elaboração da ideia do jogo. É nessa etapa que são discutidas as
+        principais diretrizes e, ao final dela, toma-se a decisão de começar ou não a planejar o jogo. Aqui, o produto
+        final é um documento curto, contendo os seguintes componentes:
+      </p>
+
+
+      <div id="time-manegement-container">
+
+        <div class="time-manegement-job">
+          <div class="time-manegement-job-img">
+            <img src="./img/ue2/icons/1.svg" />
+          </div>
+          <div class="time-manegement-job-txt">
+            <li class="my-1 mx-1">
+              <b>Premissa:</b>
+              é a visão inicial do jogo. Um ou dois parágrafos dizendo toda a ideia e jogabilidade. Por exemplo: Neste
+              jogo, você controlará um justiceiro que deve caçar os vilões considerados assassinos, do seu filho, em um
+              ambiente pós-apocalíptico. Jogue partidas e cumpra os objetivos para acumular experiência e desbloquear
+              equipamentos.
+            </li>
+          </div>
+        </div>
+
+        <div class="time-manegement-job">
+          <div class="time-manegement-job-img">
+            <img src="./img/ue2/icons/2.svg" />
+          </div>
+          <div class="time-manegement-job-txt">
+            <li class="my-1 mx-1">
+              <b>Diferenciais do jogo:</b>
+              o que há de diferente em relação aos demais jogos de mesmo estilo?
+            </li>
+          </div>
+        </div>
+
+        <div class="time-manegement-job">
+          <div class="time-manegement-job-img">
+            <img src="./img/ue2/icons/3.svg" />
+          </div>
+          <div class="time-manegement-job-txt">
+            <li class="my-1 mx-1">
+              <b>Perfil do público-alvo:</b>
+              quem vai jogar? Criança, adulto, jogadores experientes ou casuais.
+            </li>
+          </div>
+        </div>
+
+        <div class="time-manegement-job">
+          <div class="time-manegement-job-img">
+            <img src="./img/ue2/icons/4.svg" />
+          </div>
+          <div class="time-manegement-job-txt">
+            <li class="my-1 mx-1">
+              <b>Tipo ou gênero do jogo:</b>
+              ação, aventura, cassino, puzzle, RPG, simuladores, estratégia, on-line massivos.
+            </li>
+          </div>
+        </div>
+
+        <div class="time-manegement-job">
+          <div class="time-manegement-job-img">
+            <img src="./img/ue2/icons/5.svg" />
+          </div>
+          <div class="time-manegement-job-txt">
+            <li class="my-1 mx-1">
+              <b>Classificação etária:</b>
+              preocupação com violência, conteúdos adultos, referência a ilícitos devem ser levados em conta para
+              estabelecer a faixa etária.
+            </li>
+          </div>
+        </div>
+
+        <div class="time-manegement-job">
+          <div class="time-manegement-job-img">
+            <img src="./img/ue2/icons/6.svg" />
+          </div>
+          <div class="time-manegement-job-txt">
+            <li class="my-1 mx-1">
+              <b>Plataforma-alvo:</b>
+              PC, console, mobile.
+            </li>
+          </div>
+        </div>
+
+        <div class="time-manegement-job">
+          <div class="time-manegement-job-img">
+            <img src="./img/ue2/icons/7.svg" />
+          </div>
+          <div class="time-manegement-job-txt">
+            <li class="my-1 mx-1">
+              <b>Licenças de terceiros:</b>
+              se há necessidade de adquirir direitos de imagem, softwares ou outros produtos de terceiros. Por exemplo,
+              se queremos fazer um simulador de futebol, é necessário comprar os direitos dos clubes envolvidos.
+            </li>
+          </div>
+        </div>
+
+        <div class="time-manegement-job">
+          <div class="time-manegement-job-img">
+            <img src="./img/ue2/icons/8.svg" />
+          </div>
+          <div class="time-manegement-job-txt">
+            <li class="my-1 mx-1">
+              <b>Objetivos do jogo:</b>
+
+            </li>
+          </div>
+        </div>
+
+        <div class="time-manegement-job">
+          <div class="time-manegement-job-img">
+            <img src="./img/ue2/icons/9.svg" />
+          </div>
+          <div class="time-manegement-job-txt">
+            <li class="my-1 mx-1">
+              <b>Retorno financeiro:</b>
+
+            </li>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div> <!-- End BlackBox -->
+  </div> <!-- End Parallax -->
+
+  <!--Section-->
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Pré-produção ou planejamento</h1>
+
+        <p>
+          Uma vez tomada a decisão de se criar o jogo, é necessário, então, planejar como será feito o processo de
+          criação. Ao fim dessa etapa, teremos um entregável chamado versão Pré-Alpha do jogo. Para tanto, são
+          elaborados dois documentos: Documento de Design do Game (GDD) e o Documento de Design Técnico (TDD).
+        </p>
+        <p>
+          Em linhas gerais, esses documentos contemplam os requisitos do projeto, tanto de equipamentos quanto de
+          pessoas. Será determinado o escopo, os recursos de jogabilidade, os softwares necessários, os artistas e toda
+          a equipe do projeto.
+        </p>
+        <p>
+          Também é nessa fase em que determinamos quais os tipos e como serão feitos os testes. Além disso, define-se
+          uma estimativa de gasto para o projeto e o possível retorno do investimento aplicado. No TDD, é detalhado o
+          pipeline (isto é, as etapas de produção e as atividades necessárias para cumpri-las) e os recursos
+          necessários.
+        </p>
+        <p>
+          A tabela, a seguir, ilustra quais são as categorias de recursos presentes no TDD:
+        </p>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Tabela-->
+  <table class="table-uc4 w-full">
+    <tr id="first">
+      <td>Recurso</td>
+      <td>Descrição</td>
+    </tr>
+    <tr>
+      <td>Processo</td>
+      <td>Relativo ao desenvolvimento. Estão inclusos manuais e tutoriais de ferramentas, aprovação de documentação,
+        controle de versionamento etc.</td>
+    </tr>
+    <tr>
+      <td>Produção</td>
+      <td>Melhorias nas ferramentas de criação, tais como scripts para automatizar a modificação em objetos do cenário,
+        iluminação, criação de objetos etc.</td>
+    </tr>
+    <tr>
+      <td>Jogabilidade</td>
+      <td>Elementos que influem na experiência do jogo. Por exemplo, um item de saúde ou a mecânica de um salto duplo.
+      </td>
+    </tr>
+  </table>
+
+  <!--Section-->
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+
+        <p>Assim, os recursos são listados, classificados por prioridades e enviados para os responsáveis de cada área
+          (design, programadores etc). Após analisados e discutidos, estes recursos são distribuídos em entregas
+          (versões dos jogos) e um cronograma é elaborado. A partir disso, o jogo começa a ser definitivamente tirado do
+          papel.
+        </p>
+
+        <!--SIMULADOR-->
+
+
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Protótipo</h1>
+
+        <p>
+          Nessa etapa, é feita a elaboração das principais mecânicas do jogo, tais como os recursos de jogabilidade e as
+          principais ações do jogo. Aqui, também são feitos os testes e a validação dessas mecânicas. Nessa etapa de
+          prototipagem, você também pode listar, caso queira, todos os elementos que você pretende testar e validar no
+          seu projeto, o core gameplay, as mecânicas do jogo, câmera etc. Também é importante que consiga dar prazos
+          para as tarefas listadas.
+        </p>
+
+        <div class="atencion my-3 mx-3">
+          <img src="./img/global/icons/lightbulb.png" />
+          <p>
+            Os protótipos não devem ser reutilizados para o projeto final. A ideia é que sejam feitos bem rápido, apenas
+            para teste. Protótipos também podem ser feitos com elementos físicos como papel ou peças de tabuleiro.
+          </p>
+        </div>
+
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Parallax-->
+  <div class="parallax background-parallax2">
+    <div class="cubeBlack">
+      <h1 class="text-subtitle1 dark-rose mx-3">Produção</h1>
+      <p>
+        Nesta fase, espera-se que o GDD já esteja concluído, porém, ainda aberto para determinados ajustes e
+        refinamentos nas mecânicas e outros elementos. Assim que o protótipo é aprovado, inicia-se a etapa de
+        produção, que é a mais extensa e importante no desenvolvimento do game. Para grandes produções (como GTA
+        ou Call of Duty), essa fase pode durar até 2 anos. Seu entregável é um game acabado, pronto para ser
+        testado.
+      </p>
+      <p>
+        Na etapa de produção, os artistas se concentram em produzir os personagens, cenários e objetos, bem como
+        os mapas do jogo. Os programadores, por sua vez, codificam todas as interfaces e acrescentam a
+        Inteligência Artificial. Tudo aquilo que foi planejado nas etapas anteriores é implementado, mesmo que com
+        algumas correções de rota a serem ajustadas. Aqui, nessa etapa, não se discute mais o conceito do jogo e
+        não é recomendável alterar as mecânicas propostas. Sendo assim, os ajustes devem ser limitados e pontuais
+        para que o game não perca sua essência.
+      </p>
+
+      <div class="atencion my-3 mx-3">
+        <img src="./img/global/icons/lightbulb.png" />
+        <p>
+          Se um jogo é desenvolvido para um país e será vendido em outros países, os desenvolvedores devem
+          adaptá-lo para que possa se adequar ao idioma (tradução de texto e voz) e às normas do país de destino
+          (violência, linguagem etc). Até mesmo o tamanho das caixas de diálogo devem ser repensadas, pois idiomas
+          como o português tendem a ter mais caracteres por palavra.
+        </p>
+      </div>
+
+    </div> <!-- End BlackBox -->
+  </div> <!-- End Parallax -->
+
+  <section class="container course">
+    <div class="section">
+      <div class="contentSection">
+
+        <p>
+          Versão onde serão realizados os primeiros testes técnicos. Nessa etapa, as principais mecânicas, os principais
+          elementos de arte e os principais gameplays já estão implementados e serão realizados testes para verificar a
+          presença de bugs. Os bugs são classificados em três níveis (p1, p2 e p3), sendo o p1 o mais crítico.
+
+
+
+
+        </p>
+        <p>
+          Assim, na fase alpha o game já pode ser jogado do começo ao fim e está direcionado para teste, acabamento e
+          ajustes finais do jogo. Aqui, alguns elementos artísticos podem até não ser definitivos, mas o motor e
+          interface com o usuário devem estar prontos. Além disso, se for necessário realizar modificações para
+          adequação de cronograma, é na fase alpha que isso é feito. Os testadores analisam cada módulo do game pelo
+          menos uma vez, classificando os defeitos, conforme a classificação vista acima. Um check-list para os itens
+          básicos da versão alpha é dado a seguir:
+        </p>
+
+
+        <!--lista com ponto-->
+        <p>
+          <li class="my-1 mx-1">
+            Jogável do começo ao fim
+          </li>
+          <li class="my-1 mx-1">
+            Texto no idioma básico
+          </li>
+          <li class="my-1 mx-1">
+            Interface básica e documentação preliminar
+          </li>
+          <li class="my-1 mx-1">
+            Compatibilidade com hardware e software especificados
+          </li>
+          <li class="my-1 mx-1">
+            Requisitos mínimos do sistema testados e operacionais
+          </li>
+          <li class="my-1 mx-1">
+            Interfaces com o usuário testadas quanto à compatibilidade
+          </li>
+          <li class="my-1 mx-1">
+            Arte e áudio temporários
+          </li>
+          <li class="my-1 mx-1">
+            Recursos multijogador (se houver) testados
+          </li>
+          <li class="my-1 mx-1">
+            Rascunho do manual do game
+          </li>
+        </p>
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Versão alpha</h1>
+
+        <p>
+          Versão onde serão realizados os primeiros testes técnicos. Nessa etapa, as principais mecânicas, os principais
+          elementos de arte e os principais gameplays já estão implementados e serão realizados testes para verificar a
+          presença de bugs. Os bugs são classificados em três níveis (p1, p2 e p3), sendo o p1 o mais crítico.
+        </p>
+
+        <p>
+          Assim, na fase alpha o game já pode ser jogado do começo ao fim e está direcionado para teste, acabamento e
+          ajustes finais do jogo. Aqui, alguns elementos artísticos podem até não ser definitivos, mas o motor e
+          interface com o usuário devem estar prontos. Além disso, se for necessário realizar modificações para
+          adequação de cronograma, é na fase alpha que isso é feito. Os testadores analisam cada módulo do game pelo
+          menos uma vez, classificando os defeitos, conforme a classificação vista acima. Um check-list para os itens
+          básicos da versão alpha é dado a seguir:
+        </p>
+
+        <img class="w-75 m-auto" src="./img/ue2/Imagem 2.png" alt="" />
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Versão beta</h1>
+
+        <p>
+          A versão beta é responsável por corrigir os erros e bugs apontados na versão alpha, sem acrescentar nada de
+          novo ao game. Aqui, encerra-se oficialmente a fase de produção e o foco são os testes finais. Alguns estúdios
+          contratam jogadores em potencial, para que possam analisar e testar o jogo antes de lançar no mercado. Além
+          disso, todos os itens do checklist da versão alpha devem estar prontos na sua versão final. Se o game for
+          internacional, é aqui nessa etapa que a internacionalização (ajuste de idioma) é realizada. Além disso, o
+          software do jogo deve estar pronto, compilado e disponível para a mídia (física para PCs e consoles, ou em
+          lojas de aplicativos). Por fim, essa etapa possui 3 entregáveis:
+        </p>
+
+        <img class="w-75 m-auto" src="./img/ue2/Imagem 3.png" alt="" />
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Versão ouro</h1>
+
+        <p>
+          Aqui, o game está pronto para o lançamento, sendo enviado para fabricação e distribuição em mídia física ou
+          digital. E apesar de pronto, hoje em dia o jogo ainda recebe inúmeras atualizações, ajustes de features e
+          possíveis bugs do jogo. Aqui já é analisado também os dados de analytics, para ver o desempenho do jogo com o
+          público.
+        </p>
+
+        <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <h1 class="text-subtitle1 dark-rose mx-3">Pós-produção</h1>
+
+        <p>
+          Já nessa fase, são ouvidas as críticas dos compradores e corrigidos os bugs encontrados, através de
+          lançamentos de novas versões gratuitas. Aqui, também, são produzidos pacotes (DLC) e expansões (pagas) de
+          personagens e itens jogáveis, para que os jogadores possam adquirir e melhorar a experiência.
+        </p>
+
+        <p>
+          Nesta unidade, você teve contato com as principais etapas de desenvolvimento de um game, desde sua concepção
+          até a pós-produção. É importante que você entenda o que é feito em cada uma dessas etapas para, assim, adequar
+          melhor suas habilidades e aptidões.
+        </p>
+
+
+
+        <div class="flex justify-center w-full">
+          <img src="./img/ue1/check.svg" />
+          <p class="px-3" id="check-green-word"> Solução do problematizando</p>
+        </div>
+        <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/zsTTj9437MM"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <div class="containerFooter row">
+    <a class="row" href="aula-1.html">
+      <img class="arrowImg" src="img/global/icons/previusclass.png" />
+      <p class="btnDesafio">Desafio anterior</p>
+    </a>
+    <a class="row" href="aula-3.html">
+      <p class="btnDesafio">Próximo Desafio</p>
+      <img class="arrowImg" src="img/global/icons/nextclass.png" />
+    </a>
+  </div>
+
+  <!-- Libras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

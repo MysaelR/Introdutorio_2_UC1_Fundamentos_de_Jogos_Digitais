@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-touch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos Digitais - SENAI EAD</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="SENAISP">
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/aula7.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./scripts/index.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a onclick="openNav()"><img src="./img/global/icons/menu.png" class="logoJogos" /></a>
+        <img src="./img/global/icons/logoSenai.png" class="logoJogos" />
+        <div></div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button onclick="openList()" class="accordion"><img src="./img/global/icons/summary.svg"
+                style="margin-right: 10px;">
+            <p>Sumário</p>
+        </button>
+        <div class="panel" id="panelBtn">
+            <ul type="1">
+                <a class="listPanel" href="#contextualizing">
+                    <li>1.0 Contextualizando</li>
+                </a>
+                <a class="listPanel" href="#mobile-so">
+                    <li>2.0 Sistemas operacionais mobile</li>
+                </a>
+                <a class="listPanel" href="#ios-android">
+                    <li>3.0 Android e iOS</li>
+                </a>
+                <ul type="1" style="margin-left:20px;">
+                    <a class="listPanel" href="#android">
+                        <li>3.1 Características do Android</li>
+                    </a>
+                    <a class="listPanel" href="#ios">
+                        <li>3.2 Características do iOS</li>
+                    </a>
+                </ul>
+                <a class="listPanel" href="#differences">
+                    <li>4.0 Diferenças entre Android e iOS</li>
+                </a>
+                <ul type="1" style="margin-left:20px;">
+                    <a class="listPanel" href="#security">
+                        <li>4.1 Segurança</li>
+                    </a>
+                    <a class="listPanel" href="#updates">
+                        <li>4.2 Atualizações</li>
+                    </a>
+                    <a class="listPanel" href="#personalization">
+                        <li>4.3 Personalização</li>
+                    </a>
+                    <a class="listPanel" href="#publishing">
+                        <li>4.4 Desenvolvimento e publicação na loja</li>
+                    </a>
+                    <a class="listPanel" href="#integrations">
+                        <li>4.5 Integração com outros dispositivos</li>
+                    </a>
+                </ul>
+                <a class="listPanel" href="#games">
+                    <li>5.0 Games em iOS e Android</li>
+                </a>
+                <a class="listPanel" href="#native-hibrid">
+                    <li>6.0 Desenvolvimento nativo e híbrido</li>
+                </a>
+
+            </ul>
+
+        </div>
+        <button onclick="changeTheme()" class="accordion">
+            <img src="./img/global/icons/themeIcon.svg" style="margin-right: 10px;" alt="Alterar tema">
+            <p>Alterar tema</p>
+        </button>
+        <button onclick="changeGray()" class="accordion">
+            <img src="./img/global/icons/scaleGrayIcon.svg" style="margin-right: 10px;" alt="Escala de Cinza">
+            <p>Escala de Cinza</p>
+        </button>
+        <div class="accordion2">
+            <div style="display: flex;">
+                <img src="./img/global/icons/textIcon.svg" style="margin-right: 10px;" alt="Tamanho da fonte">
+                <p>Tamanho da fonte</p>
+            </div>
+            <div>
+                <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+                <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="homePage">
+
+        <div class="header-title">
+            <div>
+                <h2 class="text-Course" style="color: white;">Curso Técnico em</h2>
+                <h1 class="text-NameCourse">Jogos Digitais</h1>
+            </div>
+
+            <div id="containerBoxTitle">
+                <div class="numberTitle">7</div>
+                <div class="titleHeader">Software Mobile</div>
+            </div>
+
+            <div>
+                <strong class="objectiveLearning">Objetivo de Aprendizagem</strong>
+                <p class="text-DescriptUnit">Reconhecer a estrutura física dos elementos de dispositivos mobile e de
+                    consoles</p>
+            </div>
+
+            <div>
+                <p class="text-LetsLearn">Vamos iniciar os estudos</p>
+                <a class="btnPlay" href="#contextualizing">Play</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img
+            src="./img/global/icons/arrowUpScroll.png"></button>
+    <div class="espaceTitle" id="contextualizing"></div>
+    <section class="container course">
+        <div class="section">
+            <div class="contentSection">
+
+                <h1 class="text-Title light-blue">Contextualizando</h1>
+                <h3 class="text-Course">Assista ao vídeo abaixo para uma introdução
+                    aos seus estudos</h3>
+
+                <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/-lZoFwiOPMc"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="dicas">
+                    <img src="./img/global/icons/help.png" id="help" style="margin-right: 20px;" />
+                    <p>
+                        Considerando a facilidade de acesso e características do público-alvo como Maria poderá escolher
+                        o melhor sistema mobile para lançar o seu game?
+                    </p>
+                </div>
+
+                <p>
+                    Os dispositivos mobile (smartphones, tablets, óculos VR) são considerados verdadeiros computadores
+                    portáteis. Logo, são equipados com hardwares semelhantes aos desktops e notebooks, como CPU, GPU,
+                    memória, armazenamento em disco, entre outros. Sendo assim, é importante que haja um sistema
+                    operacional que faça o controle de todos esses hardwares e permita que você possa utilizar seu
+                    aparelho de forma satisfatória. Assim, o objetivo desta UE é apresentar os principais sistemas
+                    operacionais mobile atualmente disponíveis no mercado e também o processo de produção de softwares
+                    para esses dispositivos.
+                </p>
+
+                <!--Titulo-->
+                <h1 class="text-Title light-rose">Sistemas operacionais mobile</h1>
+
+                <p>
+                    Para entender sistemas operacionais mobile te convido a um breve contexto histórico, vamos lá?
+                </p>
+
+                <p>
+                    Em meados dos anos 1990 os telefones celulares se tornaram populares. A princípio eles tinham apenas
+                    uma tarefa básica: realizar ligações telefônicas em qualquer lugar.
+                </p>
+                <p>
+                    O software que controlava esses aparelhos era bem simples, pois havia poucas funções disponíveis e o
+                    hardware também não exigia algo muito sofisticado. Por exemplo, as telas eram simples,
+                    monocromáticas e pequenas. O teclado era físico, semelhante aos telefones fixos, com teclas apenas
+                    para números.
+                </p>
+
+                <!--Imagem-->
+                <img class="w-75 m-auto" src="./img/ue7/1.png" alt="Telemóvel antigo com tela pequena e monocromática, teclado físico, 
+                com teclas formado por setas, números e letras." />
+
+                <p>
+                    No início dos anos 2000, uma empresa canadense lançou um novo dispositivo mobile denominado
+                    BlackBerry. Esse aparelho revolucionou o mercado de celulares pois trazia diversas inovações:
+                    teclado QWERTY, telas maiores e diversos aplicativos que não se restringiam às ligações, agendas de
+                    contatos e alarmes.
+                </p>
+
+                <p>
+                    Ele trouxe uma gama de softwares para criação de textos, planilhas eletrônicas, entre outros. Isso
+                    atraiu, inicialmente, executivos que necessitavam editar uma planilha ou enviar um e-mail de forma
+                    rápida, sem a necessidade de um computador. Com o passar do tempo, esses dispositivos se tornaram
+                    mais baratos e atraiu a atenção do público em geral.
+                </p>
+
+                <img class="w-75 m-auto" src="./img/ue7/2.png" alt="Modelo de Smartphone com teclado Qwert e tela multicolor. 
+                " />
+
+                <p>
+                    Devido a alta demanda por esses aparelhos, empresas como Google, Apple e Microsoft lançaram seus
+                    próprios sistemas operacionais mobile, dando início à era dos smartphones. Esses sistemas permitiam
+                    aos desenvolvedores criarem seus próprios aplicativos e disponibilizarem nos lojas virtuais.
+                </p>
+                <p>
+                    Assim, o mercado mobile foi impulsionado e os telefones deixaram de fazer apenas ligações e se
+                    tornaram computadores de bolso. Instituições financeiras, governamentais e de entretenimento
+                    passaram a criar aplicativos próprios para essas plataformas, ajudando a popularizá-las. Obviamente
+                    que o mercado de games não passou desapercebido, e os estúdios desenvolvedores passaram a criar
+                    jogos específicos para mobile.
+
+                </p>
+                <p>
+                    Inicialmente havia 4 grandes grupos de sistemas operacionais mobile: Windows Mobile da Microsoft,
+                    Android da Google, IOS da Apple e BlackBerry OS da BlackBerry. Enquanto Apple e BlackBerry forneciam
+                    o sistema operacional exclusivamente para aparelhos próprios, Google e Microsoft permitiam que
+                    qualquer fabricante de smartphones utilizassem seus sistemas. Devido à dificuldades operacionais e
+                    queda da popularidade, BlackBerry e Microsoft descontinuaram seus produtos e atualmente apenas
+                    Google e Apple desenvolvem sistemas operacionais mobile.
+                </p>
+
+                <!--Titulo-->
+                <h1 class="text-Title light-rose">Avaliação</h1>
+
+                <p>
+                    Relacione os sistemas operacionais com seus fabricantes:
+                </p>
+                <div id="container-drag-and-drop">
+                    <div style="display: flex;">
+                        <div id="board-description">SO</div>
+                        <div id="board-description" style="width: 73%;">Proprietário</div>
+                    </div>
+
+                    <div class="board">
+
+                        <img src="./img/ue7/atividades/1.png" />
+
+                        <div class="dropzone" id="drop-1">
+                            <div class="card" draggable="true" id="drag-3">
+                                <img src="./img/ue5/icons/ArrowsOutCardinal.svg" />
+                                <p>Apple</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="board">
+                        <img src="./img/ue7/atividades/2.png" />
+                        <div class="dropzone" id="drop-2">
+                            <div class="card" draggable="true" id="drag-4">
+                                <img src="./img/ue5/icons/ArrowsOutCardinal.svg" />
+                                <p>Google</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="board">
+                        <img src="./img/ue7/atividades/3.png" />
+                        <div class="dropzone" id="drop-3">
+                            <div class="card" draggable="true" id="drag-1">
+                                <img src="./img/ue5/icons/ArrowsOutCardinal.svg" />
+                                <p>Microsoft</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="board">
+                        <img src="./img/ue7/atividades/4.png" />
+                        <div class="dropzone" id="drop-4">
+                            <div class="card" draggable="true" id="drag-2">
+                                <img src="./img/ue5/icons/ArrowsOutCardinal.svg" />
+                                <p>Blackberry</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="container-points-false">
+                    <img src="./img/ue5/icons/x.svg" />
+                    <p id="pontos-totais">
+                        Quase lá, você acertou 1/4. Tente novamente!
+                    </p>
+                </div>
+
+                <div id="container-points-true">
+                    <img src="./img/ue5/icons/v.svg" />
+                    <p id="pontos-totais">
+                        Parabéns, você acertou todas!
+                    </p>
+                </div>
+
+
+
+                <!--Titulo-->
+                <h1 class="text-Title light-rose">Android e IOS</h1>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Parallax-->
+    <div class="parallax background-parallax1">
+        <div class="cubeBlack">
+            <!--Subtitulo-->
+            <h1 class="text-subtitle1 dark-rose mx-3">Características do Android</h1>
+            <p>
+                Como abordado, o Android é o sistema operacional desenvolvido pela Google e está presente não somente em
+                smartphones, mas também em tablets, relógios, óculos e centrais multimídia em automóveis.
+            </p>
+
+            <p>
+                O sistema Android é disponibilizado gratuitamente aos fabricantes de hardware, tais como Samsumg e LG, e
+                estes podem adaptá-lo de acordo com seus interesses. Assim, um Android Samsung pode ser diferente de um
+                Android LG, porém mantendo seu núcleo e suas funcionalidades. Isso significa que os aplicativos
+                desenvolvidos para Android rodam em qualquer smartphone, independente da marca.
+            </p>
+            <p>
+                A grande vantagem de se trabalhar com o Android é que mesmo o fabricante do aparelho descontinue sua
+                linha, produtores independentes podem garantir a atualização do sistema operacional a esses aparelhos,
+                garantindo uma sobrevida. Isso não ocorreu com o Windows Phone.
+            </p>
+            <p>
+                Quando a Microsoft desistiu de manter seu sistema, todos os aparelhos que o utilizavam perdeu sua
+                funcionalidade. Essa flexibilidade explica o porquê do Android ser o SO mais popular: estima-se que 2,5
+                bilhões de aparelhos sejam equipados com esse sistema. Normalmente a Google lança uma nova versão do
+                Android por ano, e em muita das vezes nomeia suas versões com nome de doces: foi assim com Marshmallow,
+                Lollipop, KitKat, entre outros.
+            </p>
+            <p>
+                Uma vez que a nova versão é lançada, os fabricantes a adaptam para os seus aparelhos e lançam um pacote
+                de Update. Uma das estratégias dos fabricantes é lançar a nova versão apenas para aparelhos mais novos.
+                Essas novas versões costumam conter novas ferramentas, funcionalidades e correção de falhas críticas.
+            </p>
+        </div> <!-- End BlackBox -->
+    </div> <!-- End Parallax -->
+
+    <!--Section-->
+    <section class="container course">
+        <div class="section">
+            <div class="contentSection">
+                <!--Subtitulo-->
+                <h1 class="text-subtitle1 dark-rose mx-3">Características do Android</h1>
+
+                <p>
+                    O iOS é o sistema operacional da Apple e era disponibilizado para toda a linha mobile Apple (IPod,
+                    Ipad, Iphone). em 2019 a Apple lançou um sistema exclusivo para o tablet IPad: o iPadOS. Por se
+                    tratar de um sistema exclusivo aos aparelhos Apple, o iOS não permite a personalização, como ocorre
+                    com o Android.
+                </p>
+                <p>
+                    A grande vantagem dessa exclusividade é que o desenvolvedor pode extrair o máximo de recurso do
+                    hardware, uma vez que hardware e software são produzidos pela mesma empresa. Assim, a tendência é
+                    que aparelhos Apple com configuração de hardware semelhante a um outro equipado com Android seja
+                    mais veloz e eficiente.
+                </p>
+                <p>
+                    Além disso, o foco do iOS é a privacidade do usuário, permitindo total configuração de como os dados
+                    são coletados, armazenados e transmitidos. Em relação as atualizações, a Apple não possui um
+                    calendário anual, mas disponibiliza novas versões quando necessário.
+                </p>
+                <p>
+                    Uma vez lançada uma nova versão, essa é disponibilizada imediatamente aos aparelhos, tornando-se
+                    assim mais seguro em relação às falhas críticas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Parallax-->
+    <div class="parallax background-parallax2">
+        <div class="cubeBlack">
+            <!--Titulo-->
+            <h1 class="text-Title light-rose">Diferenças entre Android e iOS</h1>
+
+            <!--Subtitulo-->
+            <h1 class="text-subtitle1 dark-rose mx-3">Segurança</h1>
+            <p>
+                Ambos os sistemas possuem bons padrões de segurança, com a criptografia dos dados dos usuários e
+                controle de acesso à câmera e sensores. Como o iOS está mais focado em privacidade, aplicações que
+                envolvem coleta massiva de dados podem não ser tão eficientes nesse sistema.
+            </p>
+            <p>
+                Por fim, devido ao fato de que o iOS é desenvolvido pela mesma fabricante do hardware, a correção de
+                falhas de segurança tende a ser mais rápida do que em sistemas Android.
+            </p>
+
+            <!--Subtitulo-->
+            <h1 class="text-subtitle1 dark-rose mx-3">Atualizações</h1>
+
+            <p>
+                A estratégia da Apple é oferecer um longo suporte a atualizações. Isso significa que a vida útil dos
+                aparelhos com iOS é maior do que em Android. Apesar de a Google lançar novas versões de Android todos os
+                anos, a implementação efetiva dessas atualizações depende do fabricante do hardware. Assim, são os
+                fabricantes que definem quais aparelhos podem ou não receber a nova versão, o que diminui a vida útil do
+                aparelho. Por fim, quando há uma falha crítica de segurança, a Google pode atualizar uma versão
+                independente do fabricante.
+            </p>
+
+            <!--Subtitulo-->
+            <h1 class="text-subtitle1 dark-rose mx-3">Personalização</h1>
+
+            <p>
+                Aqui entra a principal vantagem do Android sobre seu concorrente. Como possui código-fonte aberto, os
+                usuários de Android podem alterar o sistema, criando novos padrões de design e também novas
+                funcionalidades. Isso não ocorre com o iOS, tornando-se assim um sistema mais rígido e dependente dos
+                desenvolvedores Apple.
+            </p>
+
+        </div> <!-- End BlackBox -->
+    </div> <!-- End Parallax -->
+
+    <!--Section-->
+    <section class="container course">
+        <div class="section">
+            <div class="contentSection">
+
+                <!--Subtitulo-->
+                <h1 class="text-subtitle1 dark-rose mx-3">Desenvolvimento e publicação na loja</h1>
+
+                <p>
+                    Tanto iOS quanto Android permitem que desenvolvedores independentes possam criar aplicativos e
+                    oferecê-los em suas lojas.
+                </p>
+
+                <p>
+                    Os aplicativos nativos para Android são desenvolvidos em linguagens de programação como o Java e o
+                    Kotlin, e seu processo de desenvolvimento costuma ser mais complexo devido à quantidade de aparelhos
+                    que podem utilzar o app. Isso requer adaptações para tamanho das telas, disponibilidade de sensores,
+                    entre outros.
+                </p>
+                <p>
+                    Os apps para iOS são desenvolvidos em Swift e Objective-C e o processo de desenvolvimento costuma
+                    ser mais rápido e fácil, pois os programadores não precisam se preocupar com a variedade de
+                    dispositivos tal como no Android.
+                </p>
+                <p>
+                    Uma vez desenvolvido, o app precisa ser publicado nas lojas oficiais da Google ou da Apple. A
+                    política de aprovação da Apple é mais rigorosa e, consequentemente, os apps para iOS tendem a ser
+                    mais seguros. Para se publicar na PlayStore da Google é necessário pagar uma taxa única de US$ 25,00
+                    e na AppStore uma assinatura anual de US$ 99,00 (isso explica o fato de apps para iOS serem, no
+                    geral, um pouco mais caro).
+                </p>
+
+                <!--Subtitulo-->
+                <h1 class="text-subtitle1 dark-rose mx-3">Integração com outros dispositivos</h1>
+
+                <p>
+                    Hoje em dia é comum querermos conectar nossos aparelhos entre si. Smartphones, Desktops, SmartTVs,
+                    Óculos VR, centrais automotivas, relógios podem estar conectados.
+                </p>
+                <p>
+                    Os dois sistemas oferecem recursos para essas conexões e no iOS esse processo é um pouco mais fácil,
+                    pois o fabricante do hardware é o mesmo, outros aparelhos que desejam se conectar com os da Apple só
+                    tem um padrão a seguir. Já no Android, como cada fabricante tem a sua versão, a conexão entre
+                    aparelhos é mais difícil e algumas funcionalidades podem não estar disponíveis.
+                </p>
+
+                <img class="w-75 m-auto" src="./img/ue7/3.png"
+                    alt="Relógio Digital IOS formato retangular com pulseira na cor rosa" />
+
+                <img class="w-75 m-auto" src="./img/ue7/4.png"
+                    alt="Relógio Digital Android, formato circular com pulseira na cor rosa." />
+
+                <!--Titulo-->
+                <h1 class="text-Title light-rose">Avaliação</h1>
+
+                <p>
+                    Considere as afirmações abaixo e assinale verdadeiro ou falso:
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--Parallax-->
+    <div class="parallax background-parallax3">
+        <div class="cubeBlack">
+            <!--Titulo-->
+            <h1 class="text-Title light-rose">Games em iOS e Android</h1>
+            <p>
+                Por dominar o mercado mobile com cerca de 85% dos aparelhos, o sistema Android leva vantagem no quesito
+                games. A maioria dos downloads são feitos por esse sistema, chegando a 75%.
+            </p>
+            <p>
+                No geral, os jogos são lançados para ambas plataformas e o perfil de usuário é o mesmo, ou seja, um
+                determinado jogo faz sucesso nos dois sistemas. Uma única diferença ocorre em mercados emergentes, como
+                o Brasil. Dentre os inúmeros estilos de jogos disponíveis tanto para Android como para IOS o plataforma
+                2D é bastante utilizado por iniciantes devido a sua facilidade no desenvolvimento.
+            </p>
+            <p>
+                Devido ao fato dos dispositivos Apple terem um preço maior, a tendência é que os proprietários desses
+                aparelhos tenham as últimas versões, possibilitando assim acesso a jogos mais pesados.
+            </p>
+            <p>
+                Novamente devido ao poder aquisitivo, a tendência é que usuários de iOS compram mais itens in-app
+                (compras feitas dentro do jogo, como vida, skin, busters etc).
+            </p>
+            <p>
+                Um outro fenômeno que ocorre no Brasil é a preferência por jogos off-line, devido ao acesso e valor dos
+                planos de internet mobile. Sendo assim, os estúdios desenvolvedores optam por características
+                específicas quando vão lançar games para essas plataformas. Dê o play no vídeo a seguir e assista a um
+                vídeo sobre exibição de jogo em ambas as plataformas.
+            </p>
+        </div> <!-- End BlackBox -->
+    </div> <!-- End Parallax -->
+
+    <!--Section-->
+    <section class="container course">
+        <div class="section">
+            <div class="contentSection">
+
+                <!--vídeo-->
+                <iframe class="marginVertical" width="100%" height="450" src="" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+
+                <!--Titulo-->
+                <h1 class="text-Title light-rose">Desenvolvimento nativo e híbrido</h1>
+
+                <p>
+                    O desenvolvimento de aplicativos mobile pode ser feito de duas formas: nativo ou híbrido. O primeiro
+                    é desenvolvido para uma plataforma específica, extraindo assim todos os recursos disponíveis no
+                    hardware e no sistema, como por exemplo acesso à câmera e sensores.
+                </p>
+                <p>
+                    O segundo modelo independe de plataforma, e são acessados através de navegadores de internet. Em
+                    relação a usabilidade, ambos apresentam funcionalidades semelhantes. Temos como por exemplo as redes
+                    sociais, tais como Facebook e Instagram, que podem ser nativos ou acessados via browser.
+                </p>
+                <!--Div de aviso com lâmpada-->
+                <div class="atencion my-3 mx-3">
+                    <img src="./img/global/icons/lightbulb.png" />
+                    <p>
+                        Browser é um navegador que possibilita aos seus usuários estarem aptos, ou seja, habilitados
+                        para interagir com documentos HTML hospedados em um servidor da rede. Resumindo é o seu
+                        navegador.
+                    </p>
+                </div>
+
+                <p>
+                    Em ambos os casos não há diferença na interação. Mas qual a diferença no desenvolvimento para esses
+                    dois tipos? A primeira grande diferença é que o processo híbrido é mais eficiente pois o aplicativo
+                    é desenvolvido apenas uma vez e através da responsividade, ele se adapta a todos os tipos de tela.
+                </p>
+                <p>
+                    A grande desvantagem do híbrido é a dificuldade ao acesso a recursos específicos de hardware. Por
+                    exemplo, se um aplicativo híbrido necessita do acesso à câmera do smartphone, é necessário um
+                    framework para permitir acesso. Isso pode gerar problemas de segurança, deixando portas abertas a
+                    softwares maliciosos.
+                </p>
+                <p>
+                    Quer aprender mais? Dê o play no vídeo a seguir que abordará sobre Desenvolvimento de apps.
+                </p>
+
+                <!--vídeo-->
+                <iframe class="marginVertical" width="100%" height="450" src="https://www.youtube.com/embed/pk_p-k_-n1Q"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="containerFooter row">
+        <a class="row" href="aula-6.html">
+            <img class="arrowImg" src="img/global/icons/previusclass.png" />
+            <p class="btnDesafio">Desafio anterior</p>
+        </a>
+        <a class="row" href="aula-8.html">
+            <p class="btnDesafio">Próximo Desafio</p>
+            <img class="arrowImg" src="img/global/icons/nextclass.png" />
+        </a>
+    </div>
+
+    <!-- Libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="./scripts/aula7.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
